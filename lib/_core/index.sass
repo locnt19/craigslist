@@ -1,216 +1,2168 @@
-@import ../_includes
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
-// +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
+.icon
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  background-image: url(../image/sprite-16px.png)
+  background-repeat: no-repeat
+  cursor: pointer
+  height: 16px
+  vertical-align: middle
+  width: 16px
 
-html, body
-	font-family: 'Montserrat', sans-serif
-	font-size: 14px
-	font-weight: 500
-	height: 100%
-	width: 100%
-	+selection
-		background-color: color-get($mau,main)
-		color: #fff
+.icon-search
+  background-position: 0 -144px
 
-h1, h2, h3, h4, h5, h6
-	font-size: initial
+.icon-toggle-gear
+  background-position: 0 -224px
 
-a
-	color: color-get($mau,main)
-	&:hover
-		color: color-get($mau,extra)
-	&:visited, &:active
-		color: color-get($mau,main)
+.view-gallery
+  background-position: 0 -272px
 
-[ripple]
-	z-index: 1
-	position: relative
-	overflow: hidden
-	.ripple
-		position: absolute
-		background: $white
-		width: 12px
-		height: 12px
-		border-radius: 100%
-		animation: ripple 1.6s
+.view-list
+  background-position: 0 -240px
 
-@keyframes ripple
-	0%
-		transform: scale(1)
-		opacity: 0.2
+.view-map
+  background-position: 0 -288px
 
-	100%
-		transform: scale(40)
-		opacity: 0
+.view-thumb
+  background-position: 0 -256px
 
-header
-	width: 100%
-	z-index: 999
-	+transition(all .5s ease-in-out)
-	&.has-tranparent
-		background: none
-	&.fixedheader
-		+pos(fix, 0 null null 0)
+.icon-locate
+  background-position: 0 -176px
 
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle
-	&:focus
-		+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
-		background: color-get($mau,main)
-		border-color: color-get($mau,main)
-.btn, .form-control
-	&:focus
-		+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
-		border-color: color-get($mau,main)
+.no-js .icon-locate, .no-localStorage .icon-locate
+  display: none
 
-.btn
-	&.btn-link
-		color: color-get($mau,main)
-	&.btn-primary
-		background: color-get($mau,main)
-		border-color: color-get($mau,main)
-		color: color-get($mau,trang)
-	&.btn-outline-primary
-		border-color: color-get($mau,main)
-		color: color-get($mau,main)
-		&:not(:disabled):not(.disabled)
-			&.active, &:hover
-				background: color-get($mau,main)
-				border-color: color-get($mau,main)
-				color: color-get($mau,trang)
-			&:focus
-				+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
+.icon-star
+  background-position: 0 -96px
+  margin-top: -4px
 
-.pagination
-	.page-item
-		.page-link
-			&:focus
-				+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
-		&.active
-			.page-link
-				background: color-get($mau,main)
-				border-color: color-get($mau,main)
-				color: color-get($mau,trang)
-.dropdown-item.active, .dropdown-item:active
-	background: color-get($mau,main)
+.no-js .icon-star, .no-localStorage .icon-star
+  display: none
 
-.select2
-	&.select2-container
-		.select2-selection
-			height: initial
-			display: block
-			width: 100%
-			padding: 0.375rem 0.75rem
-			font-size: 1rem
-			line-height: 1.5
-			color: #495057
-			background-color: #fff
-			background-clip: padding-box
-			border: 1px solid #ced4da
-			border-radius: 0.25rem
-			-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-			transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
-			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
-			outline: none
+.icon-star
+  &:hover, &.half
+    background-position: 0 -112px
+  &.fav
+    background-position: 0 -128px
 
-			.select2-selection__rendered
-				padding: 0
-				line-height: 1.5
-				height: initial
-			.select2-selection__arrow
-				height: calc(1.5rem + 0.375rem + 0.375rem - 2px)
-				line-height: 1.5
-	&.select2-container--open
-		.select2-selection
-			+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
-			border-color: color-get($mau,main)
-.select2-container--default
-	.select2-search--dropdown
-		.select2-search__field
-			border-color: color-get($mau,main)
-			outline: none
+.icon-trash
+  background-position: 0 -192px
+  &:hover, &.red
+    background-position: 0 -208px
 
-	.select2-results__option--highlighted[aria-selected]
-		background-color: color-get($mau,main)
+.my-banished .icon-trash
+  &:hover, &.red
+    background-position: 0 -192px
 
-.datepicker table tr td.active,
-.datepicker table tr td span.active
-	&:hover, &.disabled:hover, &:active, &:hover:active
-		background: color-get($mau,main)
-	&.disabled
-		&:active, &:hover:active
-			background: color-get($mau,main)
-	&.active, &:hover.active
-		background: color-get($mau,main)
-	&.disabled
-		&.active, &:hover.active
-			background: color-get($mau,main)
-		background: color-get($mau,main)
-	&:hover.disabled
-		background: color-get($mau,main)
-	&.disabled
-		&.disabled, &:hover.disabled
-			background: color-get($mau,main)
-	&[disabled], &:hover[disabled]
-		background: color-get($mau,main)
-	&.disabled
-		&[disabled], &:hover[disabled]
-			background: color-get($mau,main)
+.result-row .icon-trash.red:hover
+  background-position: 0 -192px
 
-.form-check
-	display: flex
-	align-items: center
-	input
-		display: none
-	label
-		&:before, &:after
-			font-family: 'Font Awesome 5 Free' !important
-			font-weight: 900 !important
-	input[type="checkbox"]:checked + label::before,
-	input[type="radio"]:checked + label::before
-		background: color-get($mau,main)
-		border-color: color-get($mau,main)
-	input[type="checkbox"]:checked + label::after,
-	input[type="radio"]:checked + label::after
-		color: color-get($mau,trang)
-	input[type="checkbox"]:checked + label,
-	input[type="radio"]:checked + label
-		color: color-get($mau,main)
-	input[type="checkbox"]:indeterminate + label::after,
-	input[type="radio"]:indeterminate + label::after
-		background: none
+.no-js .icon-trash, .no-localStorage .icon-trash
+  display: none
 
-.k-responsive-menu.k-menu-horizontal.k-active-mobile .dropdown-menu, 
-[k-responsive-menu].k-menu-horizontal.k-active-mobile .dropdown-menu
-	&.dropdown-arrow
-		position: relative !important
+.icon-search.light
+  background-position: 0 -160px
 
-.dropdown
-	.dropdown-menu
-		&.dropdown-arrow
-			+bor-rad(0)
-			&:before, &:after
-				content: ''
-				display: block
-				width: 0
-				height: 0
-				border: solid transparent
-			&:before
-				border-bottom-color: darken(color-get($mau,trang),20%)
-				border-width: 10px
-				margin-left: -10px
-				+pos(abs, -20px null null 1.2rem)
-			&:after
-				border-bottom-color: color-get($mau,trang)
-				border-width: 10px
-				margin-left: -10px
-				+pos(abs, -19px null null 1.2rem)
-			&.dropdown-menu-right
-				&:before
-					+pos(abs, -20px 1.2rem null initial)
-				&:after
-					+pos(abs, -19px 1.2rem null initial)
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+  .icon
+    background-image: url(../image/sprite-32px.png)
+    background-size: 16px
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
 
+ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+pre
+  font-family: monospace
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+template
+  display: none
+
+html
+  &.js .no-js, &.no-js .js-only, &.canvas .no-canvas, &.no-canvas .canvas-only, &.draggable .no-draggable, &.no-draggable .draggable-only, &.fileAPI .no-fileAPI, &.no-fileAPI .fileAPI-only, &.hashChange .no-hashChange, &.no-hashChange .hashChange, &.localStorage .no-localStorage, &.no-localStorage .localStorage, &.pushState .no-pushState, &.no-pushState .pushState, &.placeholder .no-placeholder, &.no-placeholder .placeholder-only html.touchCapable .no-touchCapable, &.no-touchCapable .touchCapable-only
+    display: none
+
+body
+  &.mobile .no-mobile, .mobile-only
+    display: none
+  &.mobile .mobile-only
+    display: block
+    display: inherit
+
+.hideme
+  display: none
+
+.screen-reader-text
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  position: absolute
+  left: -10000px
+  top: auto
+  width: 1px
+  height: 1px
+  overflow: hidden
+
+html
+  height: 100%
+  position: relative
+
+body
+  height: 100%
+  position: relative
+  background: white
+  color: #222
+  font-family: "Arial", sans-serif
+
+button, select, input, fieldset, form, label, legend
+  font-family: "Arial", sans-serif
+
+img
+  border: 0
+
+em
+  font-weight: bold
+  font-style: normal
+
+strong, b, .strong
+  font-weight: bolder
+
+big, .big
+  font-size: larger
+
+small, .small
+  font-size: smaller
+
+sup
+  font-size: .7em
+  line-height: normal
+  vertical-align: super
+
+hr
+  color: #ccc
+  background: #ccc
+  height: 2px
+  border: 0
+
+p
+  clear: none
+  margin: 1em 0
+
+input.dv, textarea.dv
+  color: #aaa !important
+
+ul.ul, ol.ol
+  padding-left: 40px
+  margin: 1em 0
+
+ul.ul
+  list-style-type: disc
+
+ol.ol
+  list-style-type: decimal
+
+ul.ul li, ol.ol li
+  display: list-item
+  line-height: 1.3em
+  margin: 1em 0
+
+.highlight
+  background: #FFF
+  font-family: "Arial", sans-serif
+  padding: 5px
+
+.error
+  background: #FFF
+  font-family: "Arial", sans-serif
+  padding: 5px
+  border-color: #fbb
+
+.linklike
+  color: #00e
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+
+.to-banish-page
+  background-color: #ddd
+  border-radius: 3px
+  padding: 0 4px
+  display: inline-block
+
+aside
+  &.highlight
+    margin: 8px auto
+  &.warning
+    font-size: 80%
+
+fieldset
+  background-color: #f7f7f7
+  border: 1px solid #ccc
+  padding: .35em .625em .75em
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+
+legend
+  font-size: .95em
+  padding: 0 0.333em
+
+.flatinput
+  border: 1px solid #ccc
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  margin: 0
+  padding: 2px
+  &:hover
+    border-color: #999
+
+.posterpicker
+  white-space: nowrap
+  line-height: 1.75em
+  background-color: #fff
+  padding: 1px 4px
+  background-color: #eee
+  border-top: 1px solid #ccc
+  border-right: 1px solid #ccc
+
+.ban
+  text-align: center
+  font-weight: bold
+  padding: 2px 5px
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  background-color: #eee
+
+.greytext
+  color: #777
+  font-size: small
+  font-weight: normal
+  font-family: "Times New Roman", Times, serif
+
+.cl_emph
+  font-weight: bold
+  color: red
+
+.bglogo
+  display: none
+
+.mobile .bglogo
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@percent)"
+  filter: alpha(opacity = 25)
+  opacity: .25
+  background-image: url(../image/cl_logo-vert.png)
+  display: block
+  height: 100%
+  max-height: 544px
+  position: absolute
+  right: 0
+  top: 35px
+  width: 102px
+  z-index: -9999
+
+section.body
+  padding: .5em 9px 6em 9px
+  margin: 0 auto
+  height: 90%
+  min-height: 600px
+
+.interstitial section.body
+  padding-top: 4.5em
+
+.mobile section.body
+  width: auto !important
+  min-height: 0
+
+.post.mobile section.body
+  min-height: inherit
+  padding-bottom: 1em
+
+.buttongroup
+  background-color: #FFF
+  height: 1.3em
+  line-height: 1.3em
+  border: 1px solid #e0e0e0
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  overflow: hidden
+  .button
+    display: -moz-inline-stack
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    border-left: 1px solid #e0e0e0
+    padding: 0 7px
+    height: 100%
+    &.sel
+      color: #FFF
+      background-color: #5252ff
+      cursor: text
+      &:hover
+        text-decoration: none
+    &:first-child, &.first
+      border-left: 0
+  a:visited
+    color: #00E
+
+.toggle-arrow
+  border-left: 5px solid transparent
+  border-right: 5px solid transparent
+  border-top: 5px solid blue
+  height: 0
+  width: 0
+
+@media only screen and (min-width: 840px)
+  .post section.body
+    padding-top: 4.5em
+
+@media (orientation: landscape)
+  .interstitial section.body
+    padding-top: 3.5em
+
+@media only screen and (max-width: 480px)
+  body
+    .narrow
+      display: initial
+      &.global-header
+        display: block
+    .wide
+      display: none
+    &.show-wide
+      .wide, .narrow.show-wide
+        display: block
+        cursor: pointer
+      .wide li, .narrow.show-wide li
+        margin-top: 5px
+  .homepage .global-header.narrow
+    display: none
+
+body
+  &.show-wide .narrow, &.homepage.mobile .narrow
+    display: none
+    cursor: pointer
+
+.narrow
+  display: none
+  cursor: pointer
+
+.show-wide-header
+  margin-right: 8px
+  margin-top: -4px
+  font-weight: bold
+  float: right
+
+.accountform
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  border: 1px solid #ccc
+  margin: 16px auto
+  max-width: 400px
+  padding: 8px
+
+.accountform-banner
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  background-color: #eee
+  border: 1px solid #E4E4E4
+  font-weight: bold
+  padding: 8px 5px
+  text-align: center
+
+.accountform-field
+  margin: 10px 8px
+  label
+    display: block
+  input
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    border: 1px solid #ccc
+    display: block
+    font-family: "Times New Roman", Times, serif
+    font-size: 16px
+    padding: 4px
+    width: 97.5%
+
+.accountform-actions
+  *zoom: 1
+  margin: 10px 8px 0 8px
+  &:before
+    content: " "
+    display: table
+    visibility: hidden
+  &:after
+    content: " "
+    display: table
+    visibility: hidden
+    clear: both
+
+.accountform-helplink
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  float: left
+  font-size: 14px
+  margin-top: 6px
+
+.accountform-btn
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  background: linear-gradient(#eee, #DCDCDC)
+  border: 1px solid #ccc
+  float: right
+  font-size: 14px
+  padding: 5px 6px
+  &:hover
+    background: linear-gradient(#DCDCDC, #B7B7B7)
+
+.login-page-boxes
+  margin: 0 auto
+
+.login-box
+  margin-top: 32px
+
+.box-conjunction
+  text-align: center
+  font-style: italic
+  font-size: 16px
+
+.password-reset-box
+  margin-top: 32px
+
+.create-account-box
+  margin-top: 32px
+  max-width: 406px
+
+.alert
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  border: 1px solid transparent
+  padding: 8px
+  margin: 8px
+  text-align: center
+  .alert-text-bold
+    font-weight: bold
+  p
+    margin: 0
+    margin-bottom: 0
+  ul
+    margin-bottom: 0
+  p +
+    p, ul
+      margin-top: 4px
+  ul li + li
+    margin-top: 4px
+  .alert-list
+    text-align: left
+    ul
+      list-style: disc outside
+      padding-left: 16px
+  &.alert-sm
+    font-size: 14px
+    padding: 8px
+  &.alert-md
+    font-size: 16px
+    padding: 10px
+  &.alert-lg
+    font-size: 18px
+    padding: 12px
+
+.alert-info
+  background-color: #e6f0fb
+  border-color: #d0e3f7
+  color: #1c64ac
+  a
+    color: #1c64ac
+    font-weight: 600
+    &:hover
+      color: #154a80
+
+.alert-success
+  background-color: #e5f5df
+  border-color: #d5efcc
+  color: #115a13
+  a
+    color: #115a13
+    font-weight: 600
+    &:hover
+      color: #092f0a
+
+.alert-warning
+  background-color: #ffefdd
+  border-color: #ffe3c3
+  color: #864400
+  a
+    color: #864400
+    font-weight: 600
+    &:hover
+      color: #532a00
+
+.alert-error
+  background-color: #fdeded
+  border-color: #fad6d6
+  color: #bf1717
+  a
+    color: #bf1717
+    font-weight: 600
+    &:hover
+      color: #911212
+
+.vote-banner
+  clear: both
+  color: #0066cc
+  margin: 0 0 21px
+  padding: 4px 0
+
+.homepage .vote-banner a
+  color: #0066cc
+  text-decoration: underline
+
+h2.vote-banner.mobile
+  display: none
+
+.mobile h2.vote-banner
+  &.desktop
+    display: none
+  &.mobile
+    display: block
+
+.asciiart-container
+  margin: 0 auto
+  text-align: center
+  pre
+    text-align: left
+    display: inline-block
+
+.simple header
+  background: #eee
+  border-bottom: 1px #ccc solid
+  display: block
+  line-height: 1.925em
+  min-height: 1.1em
+  padding: 5px
+
+.header-contents
+  padding-left: 6px
+  position: relative
+  a
+    text-decoration: none
+
+.mobile .header-contents
+  padding: 0 8px
+
+.header-logo
+  -webkit-border-radius: 1em
+  -moz-border-radius: 1em
+  border-radius: 1em
+  background-color: #fff
+  border: 1px solid #ccc
+  float: left
+  line-height: 1
+  margin: 0 5px
+  padding: .25em
+  text-decoration: none
+
+.global-header
+  *zoom: 1
+  border-bottom: 1px #ccc solid
+  background: #eee
+  height: 100%
+  line-height: 1.925em
+  min-height: 1.1em
+  padding: .3125em 0
+  width: 100%
+  z-index: 1003
+  &:before
+    content: " "
+    display: table
+    visibility: hidden
+  &:after
+    content: " "
+    display: table
+    visibility: hidden
+    clear: both
+
+.bestof .global-header
+  height: auto
+
+.posting .global-header
+  margin-bottom: 0
+
+.search .global-header
+  position: static
+
+.mobile footer
+  padding: 5px 0
+
+.js .homepage
+  #catAbb, #go
+    display: none
+  &.mobile #go
+    display: -moz-inline-stack
+    display: inline-block
+    *display: inline
+    *zoom: 1
+
+.post.mobile .body .posting header
+  display: none
+
+table.four_pane_search
+  width: auto
+  height: auto
+
+.results_pane
+  width: 100%
+  padding: 0 15px 0 15px
+
+.breadcrumbs-container
+  float: left
+  font-size: .9375em
+  min-height: 1.3em
+  position: relative
+  ul, ol
+    margin: -3px 0 0
+    padding-left: 0
+    list-style: none outside none
+  em
+    font-weight: normal
+
+.mobile .breadcrumbs-container em
+  display: none
+
+.breadcrumbs-container
+  p
+    margin: 0
+  .breadcrumbs
+    float: left
+    &.hide-subareas .subarea
+      display: none
+  .breadcrumb-arrow
+    font-size: 0.95em
+
+.search .breadcrumbs-container .breadcrumb-arrow
+  display: none
+
+.breadcrumbs-container
+  select
+    margin: 0
+  .breadcrumbs .crumb
+    height: 1.6em
+    float: none
+    margin-right: 5px
+    a
+      text-decoration: none
+  .clearfix
+    *zoom: 1
+    &:before
+      content: " "
+      display: table
+      visibility: hidden
+    &:after
+      content: " "
+      display: table
+      visibility: hidden
+      clear: both
+
+.fav
+  .breadcrumbs-form .subarea, .discards
+    display: none
+
+.homepage .subarea .breadcrumb-arrow, .fav-label, .discards-label
+  display: none
+
+.userlinks
+  float: right
+  font-size: .9em
+  margin-top: 2px
+  padding: 0
+  position: absolute
+  *position: static
+  right: 0
+  a
+    text-decoration: none
+  .user
+    float: left
+    line-height: 1.4em
+    padding-left: .4em
+    padding-right: .4em
+    text-align: center
+    &:first-child
+      padding-left: 0
+      padding-right: 0.5em
+    &.account
+      border-left: 1px solid #999
+
+.user-favs-discards .userlinks .user
+  clear: left
+  float: right
+  margin-top: 5px
+
+.homepage .user-favs-discards .userlinks .user
+  display: none
+
+.userlinks
+  .icon-star, .icon-trash
+    margin-right: 3px
+
+.mobile .userlinks
+  margin-right: 6%
+
+.upper #ef
+  float: right
+  margin-left: 4px
+
+.favorites
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  background-color: #ffc
+  display: none
+  padding: 0 4px
+  &.off
+    display: none
+
+.search .favorites, .posting .favorites
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+
+.search .favorites.off, .posting .favorites.off
+  display: none
+
+.menu-button
+  cursor: pointer
+  display: none
+  font-size: 1.5em
+  line-height: .25em
+  width: 1em
+
+.account-header
+  background: #eee
+  border-bottom: 2px #ccc solid
+  font-family: sans-serif
+  margin-bottom: 1em
+  padding: 5px 5px 0
+  .tabcontainer
+    margin-top: 10px
+
+.mobile .account-header a
+  font-size: 14px
+
+#loginWidget
+  border: #ddd solid 1px
+  float: right
+  margin: 0 5px
+  padding: 0 5px
+  white-space: nowrap
+  text-align: right
+  font-size: 0.8em
+  a
+    line-height: 1.2em
+    text-decoration: none
+    white-space: nowrap
+  p
+    display: inline
+
+.mobile
+  #loginWidget
+    background-color: transparent
+    border: 0
+    padding: 0
+    text-align: left
+    width: auto
+    p
+      line-height: 2
+      margin: 0
+      strong
+        display: block
+        -ms-word-break: break-all
+        word-break: break-all
+        word-break: break-word
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+  #leftbar
+    display: none
+
+@media (orientation: landscape)
+  .fav-label, .discards-label
+    display: none
+  .breadcrumbs-container .breadcrumbs
+    -webkit-columns: 2
+    -moz-columns: 2
+    columns: 2
+    margin-top: 1px
+  .homepage .breadcrumbs-container .breadcrumbs .crumb
+    float: left
+  .breadcrumbs-container .breadcrumbs
+    .crumb
+      height: auto
+      line-height: 1.5em
+    .section
+      -webkit-column-break-before: always
+      break-before: always
+  .interstitial .breadcrumbs-container .breadcrumbs
+    -webkit-columns: 1
+    -moz-columns: 1
+    columns: 1
+
+@media only screen and (min-width: 840px)
+  .fav-label, .discards-label
+    display: inline
+
+@media only screen and (min-width: 840px) and (orientation: portrait)
+  .breadcrumbs-container .breadcrumbs
+    -webkit-columns: 1
+    -moz-columns: 1
+    columns: 1
+    margin: 0
+  .header-logo
+    margin-top: 3px
+
+@media only screen and (min-width: 840px) and (orientation: landscape)
+  .breadcrumbs-container .breadcrumbs
+    -webkit-columns: 1
+    -moz-columns: 1
+    columns: 1
+    margin-top: 4px
+  .header-logo
+    margin-top: 3px
+
+@media only screen and (min-width: 840px)
+  .global-header
+    height: 1.925em
+  .search .global-header
+    position: fixed
+  .breadcrumbs-container .breadcrumbs .crumb
+    float: left
+    height: auto
+  .search .breadcrumbs-container
+    .breadcrumb-arrow
+      display: inline
+    li:nth-last-child(2) .breadcrumb-arrow
+      display: none
+  .userlinks
+    margin-top: 0
+    .user
+      float: left
+      margin-right: 5px
+    .user-favs-discards
+      float: left
+      margin-top: 5px
+      .user
+        border-right: 1px solid #999
+        clear: none
+  .mobile .userlinks
+    margin-right: 10%
+  .post .posting .global-header
+    position: static
+  .user-actions
+    float: right
+    margin-left: 5px
+    margin-top: 5px
+
+@media print
+  .userlinks
+    display: none
+  .breadcrumbs-container .breadcrumbs .crumb
+    float: left
+
+footer
+  background: #eee
+  border-top: 1px solid #ccc
+  bottom: 0
+  left: 0
+  line-height: 1.5em
+  min-height: 1.1em
+  padding: .3em 4em .3em 0
+  position: absolute
+  right: 0
+  text-align: center
+
+.desktop footer
+  z-index: 1001
+  bottom: 0
+
+.mobile footer
+  padding-right: 5px
+
+footer
+  .clfooter li
+    display: inline
+    padding: 0 4px
+    font-size: small
+    a
+      text-decoration: none
+  .rss
+    position: absolute
+    right: 4px
+    bottom: 4px
+    .l
+      background: orange
+      padding: 0 2px
+      color: white
+      font-weight: bold
+      text-decoration: none
+  .clfooter .mobile
+    display: none
+
+.mobile footer .clfooter
+  .desktop
+    display: none
+  .mobile
+    display: inline
+
+footer .clfooter .rss
+  float: right
+  text-align: right
+  .l
+    background: orange
+    padding: 0 2px
+    color: white
+    font-weight: bold
+
+.mobile footer .rss
+  display: none
+
+.simple
+  footer
+    display: none
+  &.footer footer
+    display: block
+
+.paginator
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  min-width: 310px
+  color: #aaa
+  white-space: nowrap
+  .resulttotal, .unfavtotal
+    display: none
+    text-align: center
+    color: #222
+
+.show-banished .paginator
+  .resulttotal, .unfavtotal
+    display: inline
+
+.map .paginator
+  .resulttotal, .unfavtotal
+    display: inline
+
+.fav .paginator
+  .resulttotal, .unfavtotal
+    display: inline
+
+.show-banished .paginator
+  .resulttotal .for-map, .unfavtotal .for-map
+    display: none
+
+.map.show-banished .paginator
+  .resulttotal .for-map, .unfavtotal .for-map
+    display: inline
+
+.paginator .of-total
+  display: none
+
+.map .paginator .of-total
+  display: inline
+
+.paginator
+  .first
+    width: 30px
+    padding: 0
+  .prev, .next
+    width: 60px
+    padding: 0
+  span
+    &.first, &.prev, &.next
+      display: none
+  &.firstpage
+    a
+      &.first, &.prev
+        display: none
+    span
+      &.first, &.prev
+        display: -moz-inline-stack
+        display: inline-block
+        *display: inline
+        *zoom: 1
+  &.lastpage
+    a.next
+      display: none
+    span.next
+      display: -moz-inline-stack
+      display: inline-block
+      *display: inline
+      *zoom: 1
+  .pagenum
+    color: #222
+    white-space: nowrap
+    width: 140px
+    padding: 0
+
+.my-banished .paginator .buttons, .map .paginator .buttons, .paginator .banish-out-of
+  display: none
+
+.fav
+  .paginator
+    border-color: #ffd508
+  &.my-banished .paginator
+    border-color: #ccc
+
+.show-banished .paginator
+  border-color: #ccc
+
+.clear-all-banished
+  font-size: 13.3px
+  display: none
+
+.has-banished .clear-all-banished
+  display: inline
+
+.show-banished .displaycountShow
+  display: none
+
+.geolocate-container
+  display: inline-block
+
+.geolocate-label
+  font-size: .8125em
+  font-weight: 700
+
+.geolocate
+  background-color: #fff
+  border-radius: 2px
+  border: 1px solid #ccc
+  padding: 4px 5px 2px
+
+.geolocate-button
+  background-color: #fff
+  border-radius: 2px
+  border: 1px solid #ccc
+  color: #333
+  cursor: pointer
+  font-family: "Arial", sans-serif
+  font-size: 1em
+  font-weight: bold
+  line-height: 1
+  padding: 4px 3px 3px
+  position: relative
+  top: 3px
+
+.geolocate-icon
+  background-position: 0 -192px
+
+section.personals_interstitial_body
+  min-height: 250px !important
+
+.interstitial
+  .body
+    li a
+      font-weight: bold
+    .warning
+      float: right
+      background-color: #ffd
+      max-width: 396px
+      padding: 12px
+    h3
+      font-size: 1.2em
+      font-weight: bold
+      line-height: 1.2em
+      margin: 20px 0
+  .infoBlurb
+    margin: 1em 35px
+  .leftside
+    float: left
+  blockquote
+    margin: 1em 40px
+  .personals
+    .core
+      padding: 0 0 2em
+      width: 1000px
+      height: 90%
+    .links
+      text-align: left
+      margin-bottom: 3em
+      padding-top: 2px
+      clear: both
+      .mainlink
+        font-size: 175%
+      ul
+        display: inline
+        list-style: none
+        padding: 0
+        li
+          display: inline
+          padding-right: 6px
+          a
+            font-weight: normal
+        &.subLinks
+          margin-top: 2em
+          display: block
+    .disclaimer
+      margin-top: 35px
+    .ssBlurb
+      font-size: 13px
+  &.mobile
+    width: 100%
+    .warning
+      float: none
+      clear: both
+      margin-top: 2em
+    .personals .core
+      width: auto
+      min-height: inherit
+
+.lightbox #lightbox
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  margin: 0
+  padding: 0
+  z-index: 999999999
+
+.lbbg
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: black
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@percent)"
+  filter: alpha(opacity = 50)
+  opacity: .5
+  display: none
+
+.lightbox .lbbg
+  display: block
+
+.lbframe
+  position: absolute
+  z-index: 1
+  background-color: white
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  -webkit-box-shadow: 0 0 10px 1px black
+  -moz-box-shadow: 0 0 10px 1px black
+  box-shadow: 0 0 10px 1px black
+  margin: auto
+  display: none
+
+.lightbox .lbframe
+  display: block
+
+.lbclose
+  position: absolute
+  z-index: 1000
+  top: -13px
+  right: -13px
+  padding: 3px
+  text-align: center
+  width: 1em
+  height: 1em
+  font-size: 1em
+  line-height: 1em
+  color: #fafafa
+  text-decoration: none
+  cursor: pointer
+  background-color: black
+  border: solid 2px white
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+
+.lbcontent
+  overflow: auto
+
+.captcha_form
+  padding-left: 5px
+  padding-top: 5px
+  overflow: hidden
+  background: #fff url(../image/animated-spinny.gif) no-repeat center
+  min-width: 100px
+  min-height: 100px
+
+.mobile-discards, .mobile-favorites
+  float: right
+  line-height: 25px
+  margin: 5px 0 0 5px
+  z-index: 10
+
+.mobile-discards, .discards
+  display: none
+
+.mobile.has-banished
+  .mobile-discards, .discards
+    display: block
+
+.fav
+  .mobile-discards, .discards
+    display: none
+
+.tabcontainer
+  font-size: smaller
+  overflow: hidden
+  height: 24px
+  position: relative
+  top: 6px
+  width: 100%
+  b, a
+    padding: 3px
+    -webkit-border-radius: .7em .7em 0 0
+    -moz-border-radius: .7em .7em 0 0
+    border-radius: .7em .7em 0 0
+    border: 2px #ccc solid
+    white-space: nowrap
+    margin: auto 2px
+    height: 25px
+
+\:root .tabcontainer
+  b, a
+    line-height: 25px
+
+.tabcontainer
+  b
+    background: white
+    border-bottom: 2px white solid
+    font-weight: normal
+  a
+    text-decoration: none
+    border-bottom-style: none
+    &:hover
+      background: #f7f7f7
+  .count
+    -webkit-border-radius: 7px
+    -moz-border-radius: 7px
+    border-radius: 7px
+    color: white
+    background: #666
+    border: 1px solid #333
+    font-size: 10px
+    padding: 1px
+
+.tsb
+  border: 1px solid #eee
+  padding: 5px 8px
+  font-size: small
+  em
+    font-weight: normal
+  ul
+    margin-left: 20px
+    list-style-type: disc
+    li
+      line-height: 1.5em
+
+.swipe
+  overflow: hidden
+  position: relative
+  text-align: center
+  img
+    margin: auto
+    max-width: 100%
+    max-height: 100%
+  .swipe-wrap
+    height: 100%
+    overflow: hidden
+    position: relative
+    > div
+      float: left
+      position: relative
+      overflow: hidden
+
+.gallery
+  position: relative
+  text-align: center
+  top: 0
+  left: 0
+  width: 100%
+  .arrow, .slider-info
+    text-align: center
+    background-color: #FFF
+  .arrow
+    display: none
+    position: absolute
+    cursor: pointer
+    font-size: 2em
+    line-height: 2.5em
+    top: 2.5em
+    width: .7em
+    border-top: 1px solid #ddd
+    border-bottom: 1px solid #ddd
+    color: #666
+    z-index: 1
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@percent)"
+    filter: alpha(opacity = 60)
+    opacity: 0.6
+    &:hover
+      opacity: 1
+    &.slider-back
+      left: 0
+      padding-right: .1em
+      border-top-right-radius: 2.5em
+      border-bottom-right-radius: 2.5em
+      border-right: 1px solid #ddd
+    &.slider-forward
+      right: 0
+      padding-left: .1em
+      border-top-left-radius: 2.5em
+      border-bottom-left-radius: 2.5em
+      border-left: 1px solid #ddd
+  .slider-info
+    width: 100%
+
+.no-touchCapable .gallery:hover
+  .arrow, .slider-info
+    display: block
+
+.touchCapable .gallery .slider-info
+  display: block
+
+sup.neu
+  font-weight: bold
+  color: orange
+  margin-left: 0.5em
+
+#map
+  position: relative
+  .close-map-view-button
+    background-color: #666
+    color: #fff
+    cursor: pointer
+    display: block
+    height: 2.4em
+    font-size: 1.4em
+    line-height: 2.333em
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@percent)"
+    filter: alpha(opacity = 75)
+    opacity: .75
+    padding: 0 .5em
+    position: absolute
+    right: 0
+    text-align: center
+    top: 0
+    width: auto
+    z-index: 420
+  .close-full-screen-map-mode-button
+    display: none
+  &.leaflet-fullscreen
+    position: fixed
+    top: 0
+    left: 0
+    margin: 0
+    z-index: 1004
+    border: none
+    .close-full-screen-map-mode-button
+      background-color: #666
+      color: #fff
+      cursor: pointer
+      display: block
+      height: 2.4em
+      font-size: 1.4em
+      line-height: 2.333em
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@percent)"
+      filter: alpha(opacity = 75)
+      opacity: .75
+      padding: 0 .5em
+      position: absolute
+      right: 0
+      text-align: center
+      top: 0
+      width: auto
+      z-index: 100
+    .close-map-view-button
+      display: none
+
+.mobile #map.leaflet-fullscreen
+  margin-top: 0
+  top: 0
+
+time.timeago
+  font-size: 80%
+
+#april_fools
+  width: 90%
+  p
+    margin-bottom: 16px
+  th
+    text-align: right
+    font-weight: normal
+    white-space: nowrap
+  td
+    vertical-align: top
+    &#left
+      white-space: nowrap
+      ol
+        margin: inherit
+        padding-left: 40px
+    &#right
+      padding-left: 5%
+      padding-top: 2em
+      ul > li > span
+        font-size: smaller
+        color: #00E
+        &.r
+          color: red
+        &.g
+          color: green
+  li.current
+    color: red
+  div
+    &.banner
+      width: 100%
+      background: #eee
+      text-align: center
+    &.cat
+      position: absolute
+      z-index: 2000
+      top: -24px
+
+.account-thanks-panel
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  border: 1px solid #ccc
+  margin: 32px auto
+  max-width: 620px
+  padding: 12px
+  text-align: center
+  .non-alert-text
+    p
+      margin: 12px 0 0 0
+    .thanks
+      font-weight: bold
+  .alert
+    margin: 0
+
+.sites
+  font-size: 80%
+  min-width: 600px
+  white-space: nowrap
+  #logo
+    font-size: 90px
+    line-height: 90px
+    color: #551A8B
+    text-align: center
+    font-weight: 500
+    font-family: "Times New Roman", Times, serif
+    font-stretch: expanded
+    width: 100%
+    margin: 0 auto
+    background-color: white
+    border: 0
+    sup
+      font-size: 20%
+  .colmask
+    overflow: hidden
+  .box
+    padding: 0 5px 1em
+    overflow: hidden
+    float: left
+    width: 23%
+  a
+    text-decoration: none
+  .colmask a
+    display: block
+    &:hover
+      text-decoration: underline
+      background-color: #eee
+  h1
+    border-bottom: 1px solid #ccc
+    font-family: "Times New Roman", Times, serif
+    font-size: 31px
+    line-height: 31px
+    margin: 0.67em auto
+  h4
+    text-align: left
+    padding: 1px 0
+    margin: 1em 0
+  .box ul
+    padding: 0 0 1em 40px
+    border-bottom: 1px solid #ccc
+  .jump_to_continents
+    margin: 10px auto
+    padding: 10px 0
+    text-align: center
+    a
+      margin: 0 15px 0 0
+      font-size: 14px
+  #map
+    width: inherit
+    height: 410px
+    margin: 0 auto
+  .marker-cluster
+    background-color: rgba(128, 128, 128, 0.2)
+    > div
+      margin-left: 0
+      margin-top: 0
+  .marker-cluster-small
+    -webkit-border-radius: 16px
+    -moz-border-radius: 16px
+    border-radius: 16px
+    max-height: 32px
+    max-width: 32px
+    > div
+      border: 1px solid #6ECC39
+      -webkit-border-radius: 14px
+      -moz-border-radius: 14px
+      border-radius: 14px
+      height: 28px
+      width: 28px
+      &:hover
+        background-color: #6ECC39
+  .marker-cluster-medium
+    -webkit-border-radius: 17px
+    -moz-border-radius: 17px
+    border-radius: 17px
+    max-height: 34px
+    max-width: 34px
+    > div
+      border: 1px solid #F0C20C
+      -webkit-border-radius: 15px
+      -moz-border-radius: 15px
+      border-radius: 15px
+      height: 30px
+      width: 30px
+      &:hover
+        background-color: #F0C20C
+  .marker-cluster-large
+    -webkit-border-radius: 18px
+    -moz-border-radius: 18px
+    border-radius: 18px
+    max-height: 36px
+    max-width: 36px
+    > div
+      border: 1px solid #F18017
+      -webkit-border-radius: 16px
+      -moz-border-radius: 16px
+      border-radius: 16px
+      height: 32px
+      width: 32px
+      &:hover
+        background-color: #F18017
+  &.mobile
+    min-width: 0
+    .colmask
+      width: 100%
+      left: 0
+      float: none
+      display: none
+      .box
+        width: 100%
+        margin: 0
+        padding: 0
+        float: none
+        overflow: visible
+        ul
+          display: none
+          border-bottom: 0
+          padding: 0 6em 0
+    .jump_to_continents
+      display: none
+    .body ul li
+      line-height: 2em
+      > a
+        display: block
+        font-size: 16px
+    #logo
+      font-size: 24px
+      line-height: 24px
+      background: #eee
+      border-bottom: 1px solid #ccc
+      margin-bottom: 5px
+    #map
+      margin-bottom: 1em
+      width: 100%
+      height: 200px
+    h1
+      cursor: pointer
+      background: #eee
+      padding: 2px 1em
+      border: 1px solid #ddd
+      border-left: 0
+      border-right: 0
+      font-size: 20px
+      line-height: 30px
+      white-space: nowrap
+      overflow: hidden
+      margin: 2px 0
+    h4
+      cursor: pointer
+      background: #eee
+      padding: 2px 1em
+      border: 1px solid #ddd
+      border-left: 0
+      border-right: 0
+      font-size: 20px
+      line-height: 30px
+      white-space: nowrap
+      overflow: hidden
+      margin: 2px 0
+      font-size: 16px
+      line-height: 24px
+      margin-left: 2em
+
+#mapprob
+  display: none
+  background: #eeeeee
+  border: 1px solid #ccc
+  padding: 10px
+  #specific
+    width: 98%
+
+.ui-autocomplete
+  min-width: 150px
+  max-width: 700px
+  z-index: 1003 !important
+  li
+    clear: both
+  .remove
+    border: 1px solid transparent
+    color: #666
+    cursor: pointer
+    float: right
+    display: block
+    font-size: 1em
+    line-height: .7em
+    height: .6em
+    width: .6em
+    text-align: center
+    margin-left: .5em
+    padding: .25em
+    -webkit-border-radius: 1em
+    -moz-border-radius: 1em
+    border-radius: 1em
+    &:hover
+      border-color: #ccc
+      background-color: #fefefe
+  &.ui-menu
+    .ui-menu-item
+      padding: 3px 3px 3px 0.4em
+    .ui-menu-divider
+      margin: 5px
+      .ui-autocomplete-divider
+        color: #efefef
+        background-color: #efefef
+        height: 1px
+
+.mobile .ui-autocomplete
+  max-width: 320px
+  .remove
+    border: 1px solid #ccc
+    -webkit-border-radius: 2px
+    -moz-border-radius: 2px
+    border-radius: 2px
+  li:nth-child(even)
+    background: #ededed
+  &.ui-menu .ui-menu-item
+    padding: 5px 0
+
+.cl-marker-icon
+  background-color: rgba(190, 179, 255, 0.6)
+  border: 1px solid rgba(168, 153, 255, 0.6)
+  &:hover
+    background-color: rgba(242, 182, 242, 0.6)
+    border: 1px solid rgba(238, 160, 238, 0.6)
+
+.cl-marker-icon-visited
+  background-color: rgba(242, 182, 242, 0.6)
+  border: 1px solid rgba(238, 160, 238, 0.6)
+
+.cl-marker-icon, .cl-marker-icon-visited
+  -webkit-border-radius: 100px
+  -moz-border-radius: 100px
+  border-radius: 100px
+  text-align: center
+
+.cl-marker-icon .fav, .cl-marker-icon-visited .fav, .cl-marker-icon .fav:hover, .cl-marker-icon-visited .fav:hover
+  background-color: #ffd700
+  border-color: #daa520
+
+.cl-marker-icon.banished, .cl-marker-icon-visited.banished
+  display: none
+
+.show-banished
+  .cl-marker-icon.banished, .cl-marker-icon-visited.banished
+    display: block
+    border-color: #a00
+    color: #888
+
+.fav
+  .cl-marker-icon.banished, .cl-marker-icon-visited.banished
+    display: block
+    border-color: #a00
+    color: #888
+
+#map.map-frozen
+  &:hover
+    cursor: pointer
+  .cl-marker-icon:hover
+    background-color: rgba(190, 179, 255, 0.6)
+    border: 1px solid rgba(168, 153, 255, 0.6)
+
+.account
+  .tabcontainer
+    font-size: smaller
+    position: relative
+    top: 2px
+    height: 24px
+    overflow: visible
+  .signup
+    font-family: "Times New Roman", Times, serif
+    h3
+      font-size: 1.25em
+      font-weight: bold
+      margin: 1em 0
+  .signupform #emailAddress
+    width: 20em
+  .accountsettings
+    font-family: "Times New Roman", Times, serif
+    margin-left: 2em
+    form
+      display: inline
+  .label, .field
+    padding: 5px 3px
+    margin-bottom: 3px
+  label
+    cursor: pointer
+  .label
+    background-color: #eee
+    border: 1px solid #ccc
+    text-align: right
+    font-weight: bold
+    width: 12em
+    display: -moz-inline-stack
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    vertical-align: top
+  &.mobile .label
+    display: block
+  .accountsettings .hidden
+    display: none
+
+.hidden
+  display: none
+
+.account
+  .accountsettings .change
+    font-size: smaller
+  .postinglist_title
+    *float: left
+  .new_posting_thing
+    float: right
+    margin-top: 1em
+  &.mobile .new_posting_thing
+    float: none
+    display: block
+  #paginator
+    clear: both
+
+.mobile.account table.accthp_postings tr.headers
+  display: none
+
+.account
+  table.accthp_postings
+    .sorter-false .tablesorter-header-inner
+      padding-right: 0
+    td
+      vertical-align: middle
+      white-space: nowrap
+      .regular
+        display: block
+        display: -webkit-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        -webkit-align-content: space-between
+        -ms-align-content: space-between
+        align-content: space-between
+        line-height: 1.5
+      form
+        text-align: left
+        width: 50px
+        &:last-child
+          width: 30px
+      &.active
+        background: #dfd
+        &.status
+          background: lightgreen
+      &.deleted
+        background: #eef
+        &.status
+          background: lightblue
+      &.removed
+        background: #fed
+        &.status
+          background: pink
+      &.expired
+        background: #fef
+        &.status
+          background: lightgrey
+      &.pending
+        background: #eee
+      &.posteddate
+        text-align: center
+        .repost
+          width: 100%
+          text-align: center
+      .delete-confirm
+        display: none
+        text-align: center
+        .delete
+          float: right
+          line-height: 1
+          text-align: right
+        .decline
+          float: left
+      &.confirm
+        background-color: #ffcc80
+        .regular
+          display: none
+        .delete-confirm
+          display: block
+  blockquote
+    margin: 8px
+  #ef
+    float: right
+  .managebtn
+    color: #00f
+    padding: 0
+    font-size: 12px
+    background: none
+    border: none
+    text-decoration: underline
+    cursor: pointer
+  .filterbtn
+    color: #00f
+    padding: 0
+    font-size: 16px
+    background: none
+    border: none
+    text-decoration: underline
+    cursor: pointer
+  .filtertxt
+    font-size: 16px
+  &.mobile
+    margin: 0
+    blockquote
+      display: none
+    fieldset
+      border: 0
+      margin: 0 auto 1em
+    #floater
+      display: none
+    fieldset > legend
+      font-size: 10px
+      > a
+        font-size: 14px
+    #searchfieldset
+      background: white
+  #searchtable
+    margin: 0.333em
+    td
+      padding: 6px
+  &.mobile
+    #searchtable
+      background: #eee
+      border: 1px solid #ccc
+      td
+        padding: 3px
+    table
+      width: 100%
+    .postingrow
+      *zoom: 1
+      clear: both
+      margin: 0
+      border-left: 0
+      border-right: 0
+      margin-bottom: 4px
+      &:before
+        content: " "
+        display: table
+        visibility: hidden
+      &:after
+        content: " "
+        display: table
+        visibility: hidden
+        clear: both
+      a
+        font-size: 1em
+      form
+        float: left
+        margin: 5px 0
+        padding: 0 6px 2px
+      .gc
+        float: left
+        margin: 8px 0
+        padding: 0 6px 2px
+
+.saved-searches-alert
+  margin: 0 0 20px 0
+
+.saved-search-delete
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+
+.account
+  fieldset.homepage_label
+    background: #fff
+    padding: 20px
+  table#draftslist tr
+    background: #fed
+    td
+      border: 1px solid pink
+      &:nth-child(1)
+        background: pink
+
+.ss-cancel-link
+  font-size: 16px
+
+td.ss-save-btn
+  text-align: right
+  button
+    font-size: 16px
+
+.property_date
+  display: inline
+
+.attr_is_today
+  background-color: #9FECA1 !important
+
+.personals_attrbubble
+  font-size: 0.8em !important
+
+.personals_informational
+  background-color: #EEE !important
+  color: #444 !important
+
+.personals_physical
+  background-color: #FFF8F0 !important
+
+.personals_intrinsic
+  background-color: #FFFFF0 !important
+
+.personals_situational
+  background-color: #F8FFF8 !important
+
+.personals_preferences
+  background-color: #F0F8FF !important
+
+.personals_freeform
+  font-family: "Times New Roman", Times, serif
+  background-color: #FFF !important
+  font-style: bold !important
+
+.mobile .leaflet-tile-container img
+  -webkit-backface-visibility: hidden
+
+#msgContainer
+  position: absolute
+  left: 1em
+  top: 3em
+  width: 300px
+  z-index: 100
+
+.msgBox
+  -webkit-box-shadow: 3px 3px 4px 3px #222
+  -moz-box-shadow: 3px 3px 4px 3px #222
+  box-shadow: 3px 3px 4px 3px #222
+  font-size: smaller
+  float: left
+  min-width: 295px
+  margin: 10px 0
+  padding: 5px
+  display: none
+  border-width: 2px !important
+  a.closebox
+    display: -moz-inline-stack
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    float: right
+    position: relative
+    top: -15px
+    right: -15px
+    background: #f88
+    height: 15px
+    width: 15px
+    line-height: 15px
+    font-size: 15px
+    border: 1px solid #f44
+    -webkit-border-radius: 15px
+    -moz-border-radius: 15px
+    border-radius: 15px
+    font-weight: bold
+    color: white
+    cursor: pointer
+    text-align: center
+    &:hover
+      background: #f44
+  &.error
+    background: #FFF
+    font-family: "Arial", sans-serif
+    padding: 5px
+    border-color: #fbb
+  &.message
+    background: #FFF
+    font-family: "Arial", sans-serif
+    padding: 5px
+
+.fav.my-banished
+  .banish-unbanish, .banished .banish-unbanish .unbanish, &.grid .result-row.banished
+    display: -moz-inline-stack
+    display: inline-block
+    *display: inline
+    *zoom: 1
+  .unbanish
+    font-size: small
+  .result-row.banished
+    display: block
+  .content .icon-star, .favheader
+    display: none
+
+body.is-banished .icon-star, .result-row.fav .banish-unbanish
+  display: none
+
+.banish-unbanish
+  &.changed_input
+    background-color: inherit
+  a
+    font-size: 13px
+
+body.fav .banish-unbanish
+  display: none
+
+.banish
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  cursor: pointer
+
+.banished .banish
+  display: none
+
+.unbanish
+  cursor: pointer
+  display: none
+
+.banished .unbanish
+  display: -moz-inline-stack
+  display: inline-block
+  *display: inline
+  *zoom: 1
+
+#adminWrapper
+  background: #dfd
+  font-family: sans-serif
+  padding: 4px
+  margin: 4px
+  border: solid 2px green
+  #searchBar
+    width: 100%
+    margin-top: 3px
+    padding-top: 3px
+    border-top: 1px solid green
+    font-size: small
+  span
+    border-right: 1px solid green
+    padding: 4px 10px
+    a
+      padding: 0
+      text-decoration: none
+      &:hover
+        background: #afa
+      small
+        font-size: xx-small
+    &.wide a
+      padding: 0 0.5em
+
+.post
+  #priceCalc, #priceCalc2
+    color: green
+    font-size: 1.2em
+    font-weight: bold
+
+.mobile
+  #calban
+    font-weight: normal
+    text-align: left
+    a:hover
+      background: transparent !important
+  .cal
+    display: none
+    width: 90%
+    margin: 20px auto 0 auto
+    td
+      width: 4em
+      height: 1.5em
+      line-height: 1.5em
+    &.active-cal
+      display: block
+      height: 140px
+
+@media only screen and (min-width: 1024px)
+  .interstitial .body
+    max-width: 61.25em
+
+@media print
+  .tsb
+    display: none
+
+/* {"sources":{"cl.less":"b2835e3ceca333092737e840d43cad49"}}
