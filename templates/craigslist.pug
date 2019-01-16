@@ -1,0 +1,10 @@
+extends _layout/layout.pug
+block variables
+	- var title = "index"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/index.html"
+block body
+	include ../lib/craigslist/index.pug
+//- block footer
+//- 	include ../lib/footer/index.pug

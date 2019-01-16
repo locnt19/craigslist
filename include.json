@@ -4,6 +4,14 @@
             "body": [
                 "home"
             ]
+        },
+        "craigslist": {
+            "body": [
+                "craigslist"
+			],
+			"footer": [
+                "footer"
+            ]
         }
     }
 }
