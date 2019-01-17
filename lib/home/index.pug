@@ -10,7 +10,6 @@ section.homepage
 							a#post(href="#") tạo bài viết mới
 						li
 							a(href="#") tài khoản của tôi
-					
 					form#search.homepage-search(action="#" method="GET")
 						input#query.querybox.flatinput(name="query" data-autocomplete="search-count" autocorrect="off" autocapitalize="off" placeholder="tìm kiếm craigslist" autofocus="autofocus")
 						button#go.searchbtn(type="submit")
@@ -89,7 +88,7 @@ section.homepage
 								a(href="#") 9
 							td
 								a(href="#") 10
-					ul#user_resources.leftlinks
+					ul.leftlinks
 						li
 							a(href="#") hỗ trợ, faq, lạm dụng, pháp lý
 						li
@@ -104,1583 +103,411 @@ section.homepage
 							a(href="#") chính sách bảo mật
 						li
 							a(href="#") trạng thái hệ thống
-					ul#about_craigslist.leftlinks
+					ul.leftlinks
 						li
 							a(href="#") về craigslist
 						li
 							a(href="https://www.youtube.com/user/craigslist") craigslist TV
-						li#sflinks
+						li.sflinks
 							a(href="https://forecast.weather.gov/MapClick.php?zoneid=CAZ006") thời tiết
 							a(href="https://earthquake.usgs.gov/earthquakes/map/") động đất
 							a(href="https://tidesandcurrents.noaa.gov/waterlevels.html?id=9414290") thủy triều
-		//- nav#topban.regular
-			.regular-area
-				h2.area thành phố hồ chí minh
-				ul.sublinks
-					li
-						a(href="#" title="hồ chí minh") hcm
-					li
-						a(href="#" title="hà nội") hn
-					li
-						a(href="#" title="cà mau") cm
-					li
-						a(href="#" title="đà nẵng") dn
-					li
-						a(href="#" title="đà lạt") dl
-			.enter-area
-				input.subarea-input.flatinput(type="text" data-autocomplete="subarea" value="")
-			.custom-area.no-name
-				h2.area
-				.radius-info
-					| trong vòng 
-					span.distance
-					|  mi từ 
-					span.postal
-				.exit-subarea ×
-
-		//- #center
-			.community
-				#ccc.col
-					h4.ban
-						a.ccc(href="/d/c%E1%BB%99ng-%C4%91%E1%BB%93ng/search/sfc/ccc?lang=vi" data-alltitle="tất cả c.đồng" data-cat="ccc")
-							span.txt
-								| cộng đồng
-								sup.c
-					.cats
-						ul#ccc0.left
-							li
-								a.kid(href="/d/ch%C4%83m-tr%E1%BA%BB/search/sfc/kid?lang=vi" data-cat="kid")
-									span.txt
-										| chăm
-										| trẻ
-										sup.c
-							li
-								a.pol(href="/d/ch.tr%E1%BB%8B/search/sfc/pol?lang=vi" data-cat="pol")
-									span.txt
-										| ch.trị
-										sup.c
-							li
-								a.rid(href="/d/chung-xe/search/sfc/rid?lang=vi" data-cat="rid")
-									span.txt
-										| chung xe
-										sup.c
-							li
-								a.act(href="/d/%C4%91%E1%BB%91i-t%C3%A1c-ho%E1%BA%A1t-%C4%91%E1%BB%99ng/search/sfc/act?lang=vi" data-cat="act")
-									span.txt
-										| hoạt động
-										sup.c
-							li
-								a.cls(href="/d/l%E1%BB%9Bp-h%E1%BB%8Dc/search/sfc/cls?lang=vi" data-cat="cls")
-									span.txt
-										| lớp
-										| học
-										sup.c
-							li
-								a.mis(href="/d/m%E1%BA%A5t-li%C3%AAn-l%E1%BA%A1c/search/sfc/mis?lang=vi" data-cat="mis")
-									span.txt
-										| mất liên lạc
-										sup.c
-							li
-								a.laf(href="/d/%C4%91%E1%BB%93-th%E1%BA%A5t-l%E1%BA%A1c/search/sfc/laf?lang=vi" data-cat="laf")
-									span.txt
-										| mất+tìm thấy
-										sup.c
-							li
-								a.ats(href="/d/ngh%E1%BB%87-s%E1%BB%B9/search/sfc/ats?lang=vi" data-cat="ats")
-									span.txt
-										| nghệ
-										| sỹ
-										sup.c
-						ul#ccc1.mc
-							li
-								a.muc(href="/d/nh%E1%BA%A1c-s%E1%BB%B9/search/sfc/muc?lang=vi" data-cat="muc")
-									span.txt
-										| nhạc
-										| sỹ
-										sup.c
-							li
-								a.grp(href="/d/nh%C3%B3m/search/sfc/grp?lang=vi" data-cat="grp")
-									span.txt
-										| nhóm
-										sup.c
-							li
-								a.rnr(href="/d/n%E1%BB%95i-%C4%91i%C3%AAn/search/sfc/rnr?lang=vi" data-cat="rnr")
-									span.txt
-										| nổi
-										| điên
-										sup.c
-							li
-								a.eve(href="/d/s.ki%E1%BB%87n/search/sfc/eve?lang=vi" data-cat="eve")
-									span.txt
-										| s.kiện
-										sup.c
-							li
-								a.com(href="/d/c%E1%BB%99ng-%C4%91%E1%BB%93ng-chung/search/sfc/com?lang=vi" data-cat="com")
-									span.txt
-										| t.hợp
-										sup.c
-							li
-								a.vnn(href="/d/tin-%C4%91%E1%BB%8Ba-ph%C6%B0%C6%A1ng/search/sfc/vnn?lang=vi" data-cat="vnn")
-									span.txt
-										| tin đ.phương
-										sup.c
-							li
-								a.vol(href="/d/t.nguy%E1%BB%87n/search/sfc/vol?lang=vi" data-cat="vol")
-									span.txt
-										| t.nguyện
-										sup.c
-							li
-								a.pet(href="/d/vnu%C3%B4i/search/sfc/pet?lang=vi" data-cat="pet")
-									span.txt
-										| vnuôi
-										sup.c
-				#bbb.col
-					h4.ban
-						a.bbb(href="/d/d%E1%BB%8Bch-v%E1%BB%A5/search/sfc/bbb?lang=vi" data-alltitle="t.cả dịch vụ" data-cat="bbb")
-							span.txt
-								| dịch vụ
-								sup.c
-					.cats
-						ul#bbb0.left
-							li
-								a.lss(href="/d/b%C3%A0i-h%E1%BB%8Dc-ph%E1%BB%A5-%C4%91%E1%BA%A1o/search/sfc/lss?lang=vi" data-cat="lss")
-									span.txt
-										| bài học
-										sup.c
-							li
-								a.rts(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n/search/sfc/rts?lang=vi" data-cat="rts")
-									span.txt
-										| bất động sản
-										sup.c
-							li
-								a.wet(href="/d/bi%C3%AAn-so%E1%BA%A1n-bi%C3%AAn-t%E1%BA%ADp-d%E1%BB%8Bch-thu%E1%BA%ADt/search/sfc/wet?lang=vi" data-cat="wet")
-									span.txt
-										| b.soạn/BT/dịch
-										sup.c
-							li
-								a.trv(href="/d/d.v%E1%BB%A5-du-l%E1%BB%8Bch-k%E1%BB%B3-ngh%E1%BB%89/search/sfc/trv?lang=vi" data-cat="trv")
-									span.txt
-										| d.lịch/nghỉ
-										sup.c
-							li
-								a.cms(href="/d/%C4%91.thoa%CC%A3i-di-%C4%91%C3%B4%CC%A3ng-d%E1%BB%8Bch-v%E1%BB%A5-di/search/sfc/cms?lang=vi" data-cat="cms")
-									span.txt
-										| ĐT di động
-										sup.c
-							li
-								a.hss(href="/d/d.v%E1%BB%A5-h%E1%BB%99-gia-%C4%91%C3%ACnh/search/sfc/hss?lang=vi" data-cat="hss")
-									span.txt
-										| gia đình
-										sup.c
-							li
-								a.mas(href="/d/d.v%E1%BB%A5-h%C3%A0ng-h%E1%BA%A3i/search/sfc/mas?lang=vi" data-cat="mas")
-									span.txt
-										| h.hải
-										sup.c
-							li
-								a.lbs(href="/d/l.%C4%91%C3%B4%CC%A3ng-v.chuy%C3%AA%CC%89n-ch.nh%C3%A0/search/sfc/lbs?lang=vi" data-cat="lbs")
-									span.txt
-										| l.đ/d.chuyển
-										sup.c
-							li
-								a.bts(href="/d/d.v%E1%BB%A5-l%C3%A0m-%C4%91%E1%BA%B9p/search/sfc/bts?lang=vi" data-cat="bts")
-									span.txt
-										| l.đẹp
-										sup.c
-							li
-								a.cps(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-m%C3%A1y-t%C3%ADnh/search/sfc/cps?lang=vi" data-cat="cps")
-									span.txt
-										| máy tính
-										sup.c
-						ul#bbb1.mc
-							li
-								a.aos(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-%C3%B4-t%C3%B4/search/sfc/aos?lang=vi" data-cat="aos")
-									span.txt
-										| ô tô
-										sup.c
-							li
-								a.pas(href="/d/d.v-th%C3%BA-c%C6%B0ng/search/sfc/pas?lang=vi" data-cat="pas")
-									span.txt
-										| pet
-										sup.c
-							li
-								a.lgs(href="/d/d.v%E1%BB%A5-ph%C3%A1p-l%C3%BD/search/sfc/lgs?lang=vi" data-cat="lgs")
-									span.txt
-										| ph.lý
-										sup.c
-							li
-								a.biz(href="/d/q.c%C3%A1o-dn-nh%E1%BB%8F/search/sfc/biz?lang=vi" data-cat="biz")
-									span.txt
-										| q.c
-										| dn nhỏ
-										sup.c
-							li
-								a.crs(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-s%C3%A1ng-t%E1%BA%A1o/search/sfc/crs?lang=vi" data-cat="crs")
-									span.txt
-										| sáng tạo
-										sup.c
-							li
-								a.evs(href="/d/d.v%E1%BB%A5-s%E1%BB%B1-ki%E1%BB%87n/search/sfc/evs?lang=vi" data-cat="evs")
-									span.txt
-										| s.kiện
-										sup.c
-							li
-								a.fns(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-t%C3%A0i-ch%C3%ADnh/search/sfc/fns?lang=vi" data-cat="fns")
-									span.txt
-										| t.chính
-										sup.c
-							li
-								a.fgs(href="/d/d%E1%BB%8Bch-v%E1%BB%A5-ru%E1%BB%99ng-v%C6%B0%E1%BB%9Dn/search/sfc/fgs?lang=vi" data-cat="fgs")
-									span.txt
-										| trại+ vườn
-										sup.c
-							li
-								a.sks(href="/d/d.v%E1%BB%A5-tm-c%C3%B3-tay-ngh%E1%BB%81/search/sfc/sks?lang=vi" data-cat="sks")
-									span.txt
-										| việc lành nghề
-										sup.c
-							li
-								a.cys(href="/d/d.v%E1%BB%A5-xe-m%C3%A1y/search/sfc/cys?lang=vi" data-cat="cys")
-									span.txt
-										| x.đạp
-										sup.c
-				#forums.col
-					h4.ban
-						a.forums(href="https://forums.craigslist.org/?areaID=1&lang=vi" data-cat="forums")
-							span.txt
-								| d.đàn thảo luận
-								sup.c
-					.cats
-						ul#forums0.left
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=5178&lang=vi")
-									span.txt
-										| android
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=5500&lang=vi")
-									span.txt
-										| ảnh
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=2400&lang=vi")
-									span.txt
-										| ă.chay
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=24&lang=vi")
-									span.txt
-										| â.nhạc
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=122&lang=vi")
-									span.txt
-										| cđ.ăn
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=64&lang=vi")
-									span.txt
-										| c.định
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=39&lang=vi")
-									span.txt
-										| cha mẹ
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=130&lang=vi")
-									span.txt
-										| chết
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=20&lang=vi")
-									span.txt
-										| ch.trị
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=1564&lang=vi")
-									span.txt
-										| cosmos
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=79&lang=vi")
-									span.txt
-										| cư xử
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=42&lang=vi")
-									span.txt
-										| d.lịch
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=22&lang=vi")
-									span.txt
-										| đồ ăn
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=99&lang=vi")
-									span.txt
-										| eco
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=85&lang=vi")
-									span.txt
-										| game
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=2007&lang=vi")
-									span.txt
-										| giản dị
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=9&lang=vi")
-									span.txt
-										| giúp
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=575&lang=vi")
-									span.txt
-										| haiku
-										sup.c
-						ul#forums1.mc
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=1926&lang=vi")
-									span.txt
-										| hôn nhân
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=96&lang=vi")
-									span.txt
-										| kh.học
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=12&lang=vi")
-									span.txt
-										| kh.phục
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=88&lang=vi")
-									span.txt
-										| l.đẹp
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=81&lang=vi")
-									span.txt
-										| lịch sử
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=1991&lang=vi")
-									span.txt
-										| linux
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=76&lang=vi")
-									span.txt
-										| ly dị
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=4&lang=vi")
-									span.txt
-										| mở
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=34&lang=vi")
-									span.txt
-										| m.t
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=47&lang=vi")
-									span.txt
-										| ng.sao
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=49&lang=vi")
-									span.txt
-										| ng.th
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=16&lang=vi")
-									span.txt
-										| ng.trời
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=6&lang=vi")
-									span.txt
-										| nhà đất
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=5&lang=vi")
-									span.txt
-										| ô tô
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=8&lang=vi")
-									span.txt
-										| ph.hồi
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=41&lang=vi")
-									span.txt
-										| phim
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=73&lang=vi")
-									span.txt
-										| ph.lý
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=28&lang=vi")
-									span.txt
-										| rofo
-										sup.c
-						ul#forums2.mc
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=2012&lang=vi")
-									span.txt
-										| super
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=3232&lang=vi")
-									span.txt
-										| táo
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=29&lang=vi")
-									span.txt
-										| tâm lý
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=1257&lang=vi")
-									span.txt
-										| t.cười
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=1040&lang=vi")
-									span.txt
-										| thuế
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=53&lang=vi")
-									span.txt
-										| tiền
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=93&lang=vi")
-									span.txt
-										| t.linh
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=59&lang=vi")
-									span.txt
-										| tôn giáo
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=71&lang=vi")
-									span.txt
-										| tr.lý
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=32&lang=vi")
-									span.txt
-										| t.thao
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=7000&lang=vi")
-									span.txt
-										| từ
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=98&lang=vi")
-									span.txt
-										| tv
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=27&lang=vi")
-									span.txt
-										| viết
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=7&lang=vi")
-									span.txt
-										| vlàm
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=26&lang=vi")
-									span.txt
-										| vnuôi
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=78&lang=vi")
-									span.txt
-										| vô thần
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=54&lang=vi")
-									span.txt
-										| vườn
-										sup.c
-							li
-								a(href="https://forums.craigslist.org/?areaID=1&forumID=95&lang=vi")
-									span.txt
-										| x.đạp
-										sup.c
-			.housing
-				#hhh.col
-					h4.ban
-						a.hhh(href="/d/nh%C3%A0-%C4%91%E1%BA%A5t/search/sfc/hhh?lang=vi" data-alltitle="mọi nhà đất" data-cat="hhh")
-							span.txt
-								| nhà đất
-								sup.c
-					.cats
-						ul#hhh0
-							li
-								a.rea(href="/d/b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n/search/sfc/rea?lang=vi" data-cat="rea")
-									span.txt
-										| bán bất động sản
-										sup.c
-							li
-								a.apa(href="/d/c%C4%83n-h%E1%BB%99-nh%C3%A0-cho-thu%C3%AA/search/sfc/apa?lang=vi" data-cat="apa")
-									span.txt
-										| căn hộ / nhà ở
-										sup.c
-							li
-								a.sha(href="/d/c%E1%BA%A7n-thu%C3%AA-chia-phg/search/sfc/sha?lang=vi" data-cat="sha")
-									span.txt
-										| cần
-										| phòng
-										sup.c
-							li
-								a.vac(href="/d/cho-thu%C3%AA-n.d%C6%B0%E1%BB%A1ng/search/sfc/vac?lang=vi" data-cat="vac")
-									span.txt
-										| cho thuê n.dưỡng
-										sup.c
-							li
-								a.sub(href="/d/thu%C3%AA-l%E1%BA%A1i-t%E1%BA%A1m-th%E1%BB%9Di/search/sfc/sub?lang=vi" data-cat="sub")
-									span.txt
-										| c.thuê lại / t.thời
-										sup.c
-							li
-								a.swp(href="/d/%C4%91%E1%BB%95i-nh%C3%A0/search/sfc/swp?lang=vi" data-cat="swp")
-									span.txt
-										| đổi
-										| nhà
-										sup.c
-							li
-								a.prk(href="/d/%C4%91%E1%BB%97-xe-kho/search/sfc/prk?lang=vi" data-cat="prk")
-									span.txt
-										| đỗ
-										| xe / kho bãi
-										sup.c
-							li
-								a.hsw(href="/d/m%E1%BB%8Di-nh%C3%A0-%C4%91%E1%BA%A5t-c%E1%BA%A7n/search/sfc/hsw?lang=vi" data-cat="hsw")
-									span.txt
-										| nhà đất cần
-										sup.c
-							li
-								a.roo(href="/d/ph%C3%B2ng-%E1%BB%9F-gh%C3%A9p/search/sfc/roo?lang=vi" data-cat="roo")
-									span.txt
-										| phòng
-										| / ở ghép
-										sup.c
-							li
-								a.off(href="/d/v%C4%83n-ph%C3%B2ng-th.m%E1%BA%A1i/search/sfc/off?lang=vi" data-cat="off")
-									span.txt
-										| văn phòng / t.mại
-										sup.c
-				#sss.col
-					h4.ban
-						a.sss(href="/d/c%E1%BA%A7n-b%C3%A1n/search/sfc/sss?lang=vi" data-alltitle="t.cả cần bán" data-cat="sss")
-							span.txt
-								| cần bán
-								sup.c
-					.cats
-						ul#sss0.left
-							li
-								a.pha(href="/d/photo-video/search/sfc/pha?lang=vi" data-cat="pha")
-									span.txt
-										| ảnh+video
-										sup.c
-							li
-								a.sna(href="/d/atv%2C-utv%2C-xe-tr.tuy%E1%BA%BFt/search/sfc/sna?lang=vi" data-cat="sna")
-									span.txt
-										| atv/utv/sno
-										sup.c
-							li
-								a.wta(href="/d/b%C3%A1nh-v%E1%BB%8F-xe-%C3%B4-t%C3%B4/search/sfc/wta?lang=vi" data-cat="wta")
-									span.txt
-										| bánh xe + lốp xe
-										sup.c
-							li
-								a.cba(href="/d/b%E1%BB%99-s%C6%B0u-t%E1%BA%ADp/search/sfc/cba?lang=vi" data-cat="cba")
-									span.txt
-										| bộ
-										| sưu tập
-										sup.c
-							li
-								a.waa(href="/d/c%E1%BA%A7n/search/sfc/waa?lang=vi" data-cat="waa")
-									span.txt
-										| cần
-										sup.c
-							li
-								a.ema(href="/d/cd-dvd-vh/search/sfc/ema?lang=vi" data-cat="ema")
-									span.txt
-										| cd/dvd/vh
-										sup.c
-							li
-								a.tla(href="/d/d.c%E1%BB%A5/search/sfc/tla?lang=vi" data-cat="tla")
-									span.txt
-										| d.cụ
-										sup.c
-							li
-								a.moa(href="/d/di-%C4%91%E1%BB%99ng/search/sfc/moa?lang=vi" data-cat="moa")
-									span.txt
-										| di
-										| động
-										sup.c
-							li
-								a.taa(href="/d/%C4%91ch%C6%A1i-game/search/sfc/taa?lang=vi" data-cat="taa")
-									span.txt
-										| đchơi+game
-										sup.c
-							li
-								a.haa(href="/d/s.kh%E1%BB%8Fe-v%C3%A0-l%C3%A0m-%C4%91%E1%BA%B9p/search/sfc/haa?lang=vi" data-cat="haa")
-									span.txt
-										| đẹp+khỏe
-										sup.c
-							li
-								a.ela(href="/d/%C4%91i%E1%BB%87n-t%E1%BB%AD/search/sfc/ela?lang=vi" data-cat="ela")
-									span.txt
-										| điện
-										| tử
-										sup.c
-							li
-								a.ata(href="/d/%C4%91%E1%BB%93-c%E1%BB%95/search/sfc/ata?lang=vi" data-cat="ata")
-									span.txt
-										| đồ
-										| cổ
-										sup.c
-							li
-								a.vga(href="/d/game-video/search/sfc/vga?lang=vi" data-cat="vga")
-									span.txt
-										| game video
-										sup.c
-							li
-								a.hsa(href="/d/%C4%91%E1%BB%93-gia-d%E1%BB%A5ng/search/sfc/hsa?lang=vi" data-cat="hsa")
-									span.txt
-										| gia
-										| đình
-										sup.c
-							li
-								a.ava(href="/d/h%C3%A0ng-kh%C3%B4ng/search/sfc/ava?lang=vi" data-cat="ava")
-									span.txt
-										| hàng
-										| không
-										sup.c
-							li
-								a.bfa(href="/d/k.doanh/search/sfc/bfa?lang=vi" data-cat="bfa")
-									span.txt
-										| k.doanh
-										sup.c
-							li
-								a.bpa(href="/d/linh-ki%E1%BB%87n-ph%E1%BB%A5-t%C3%B9ng-t%C3%A0u-thuy%E1%BB%81n/search/sfc/bpa?lang=vi" data-cat="bpa")
-									span.txt
-										| linh kiện tàu thuyền
-										sup.c
-							li
-								a.sya(href="/d/m%C3%A1y-t%C3%ADnh/search/sfc/sya?lang=vi" data-cat="sya")
-									span.txt
-										| máy
-										| tính
-										sup.c
-							li
-								a.zip(href="/d/%C4%91%E1%BB%93-m.ph%C3%AD/search/sfc/zip?lang=vi" data-cat="zip")
-									span.txt
-										| mphí
-										sup.c
-							li
-								a.msa(href="/d/c%C3%A1c-nh%E1%BA%A1c-c%E1%BB%A5/search/sfc/msa?lang=vi" data-cat="msa")
-									span.txt
-										| nhạc
-										| cụ
-										sup.c
-							li
-								a.fua(href="/d/n%E1%BB%99i-th%E1%BA%A5t/search/sfc/fua?lang=vi" data-cat="fua")
-									span.txt
-										| nội
-										| thất
-										sup.c
-							li
-								a.cta(href="/d/%C3%B4-t%C3%B4%26xe-t%E1%BA%A3i/search/sfc/cta?lang=vi" data-cat="cta")
-									span.txt
-										| ô
-										| tô+xe tải
-										sup.c
-							li
-								a.bip(href="/d/ph%E1%BB%A5-t%C3%B9ng-xe-%C4%91%E1%BA%A1p/search/sfc/bip?lang=vi" data-cat="bip")
-									span.txt
-										| ph.t xe máy
-										sup.c
-						ul#sss1.mc
-							li
-								a.syp(href="/d/ph%E1%BB%A5-t%C3%B9ng-m%C3%A1y-t%C3%ADnh/search/sfc/syp?lang=vi" data-cat="syp")
-									span.txt
-										| phụ tùng máy tính
-										sup.c
-							li
-								a.mpa(href="/d/ph%E1%BB%A5-t%C3%B9ng-ph%E1%BB%A5-ki%E1%BB%87n-xe-m%C3%A1y/search/sfc/mpa?lang=vi" data-cat="mpa")
-									span.txt
-										| phụ tùng xe máy
-										sup.c
-							li
-								a.pta(href="/d/p.t%C3%B9ng-%C3%B4t%C3%B4/search/sfc/pta?lang=vi" data-cat="pta")
-									span.txt
-										| p.tùng
-										| ôtô
-										sup.c
-							li
-								a.cla(href="/d/qu%E1%BA%A7n-%C3%A1o-ph%E1%BB%A5-ki%E1%BB%87n/search/sfc/cla?lang=vi" data-cat="cla")
-									span.txt
-										| q.áo+p.kiện
-										sup.c
-							li
-								a.rva(href="/d/xe-d%C3%A3-ngo%E1%BA%A1i/search/sfc/rva?lang=vi" data-cat="rva")
-									span.txt
-										| rv+trại
-										sup.c
-							li
-								a.bka(href="/d/s%C3%A1ch-t%E1%BA%A1p-ch%C3%AD/search/sfc/bka?lang=vi" data-cat="bka")
-									span.txt
-										| sách
-										sup.c
-							li
-								a.hva(href="/d/thi%E1%BA%BFt-b%E1%BB%8B-n%E1%BA%B7ng/search/sfc/hva?lang=vi" data-cat="hva")
-									span.txt
-										| t.bị nặng
-										sup.c
-							li
-								a.ara(href="/d/t.c%C3%B4ng-m.ngh%E1%BB%87/search/sfc/ara?lang=vi" data-cat="ara")
-									span.txt
-										| t.công
-										| m.nghệ
-										sup.c
-							li
-								a.gms(href="/d/thanh-l%C3%BD/search/sfc/gms?lang=vi" data-cat="gms")
-									span.txt
-										| thanh lý
-										sup.c
-							li
-								a.sga(href="/d/%C4%91%E1%BB%93-th%E1%BB%83-thao/search/sfc/sga?lang=vi" data-cat="sga")
-									span.txt
-										| thể
-										| thao
-										sup.c
-							li
-								a.ppa(href="/d/thi%E1%BA%BFt-b%E1%BB%8B/search/sfc/ppa?lang=vi" data-cat="ppa")
-									span.txt
-										| thiết
-										| bị
-										sup.c
-							li
-								a.foa(href="/d/t%E1%BB%95ng-h%E1%BB%A3p-b%C3%A1n/search/sfc/foa?lang=vi" data-cat="foa")
-									span.txt
-										| t.hợp
-										sup.c
-							li
-								a.boo(href="/d/thuy%E1%BB%81n/search/sfc/boo?lang=vi" data-cat="boo")
-									span.txt
-										| thuyền
-										sup.c
-							li
-								a.gra(href="/d/tr%E1%BA%A1i-v%C6%B0%E1%BB%9Dn/search/sfc/gra?lang=vi" data-cat="gra")
-									span.txt
-										| trại+
-										| vườn
-										sup.c
-							li
-								a.bar(href="/d/tr.%C4%91%E1%BB%95i/search/sfc/bar?lang=vi" data-cat="bar")
-									span.txt
-										| tr.đổi
-										sup.c
-							li
-								a.baa(href="/d/%C4%91%E1%BB%93-tr%E1%BA%BB-em/search/sfc/baa?lang=vi" data-cat="baa")
-									span.txt
-										| trẻ
-										| em
-										sup.c
-							li
-								a.jwa(href="/d/tr.s%E1%BB%A9c/search/sfc/jwa?lang=vi" data-cat="jwa")
-									span.txt
-										| tr.sức
-										sup.c
-							li
-								a.maa(href="/d/v%E1%BA%ADt-li%E1%BB%87u/search/sfc/maa?lang=vi" data-cat="maa")
-									span.txt
-										| vật
-										| liệu
-										sup.c
-							li
-								a.tia(href="/d/v%C3%A9/search/sfc/tia?lang=vi" data-cat="tia")
-									span.txt
-										| vé
-										sup.c
-							li
-								a.bia(href="/d/xe-%C4%91%E1%BA%A1p/search/sfc/bia?lang=vi" data-cat="bia")
-									span.txt
-										| x.đạp
-										sup.c
-							li
-								a.mca(href="/d/xe-m%C3%A1y-tay-ga/search/sfc/mca?lang=vi" data-cat="mca")
-									span.txt
-										| xe máy
-										sup.c
-							li
-								a.tra(href="/d/xe-mo%C3%B3c/search/sfc/tra?lang=vi" data-cat="tra")
-									span.txt
-										| xe moóc
-										sup.c
-			.jobs
-				#jjj.col
-					h4.ban
-						a.jjj(href="/d/vl%C3%A0m/search/sfc/jjj?lang=vi" data-alltitle="mọi vlàm" data-cat="jjj")
-							span.txt
-								| vlàm
-								sup.c
-					.cats
-						ul#jjj0
-							li
-								a.sls(href="/d/bh%C3%A0ng/search/sfc/sls?lang=vi" data-cat="sls")
-									span.txt
-										| bán hàng / k.d
-										sup.c
-							li
-								a.ret(href="/d/b%C3%A1n-l%E1%BA%BB-b%C3%A1n-bu%C3%B4n/search/sfc/ret?lang=vi" data-cat="ret")
-									span.txt
-										| bán lẻ / bán buôn
-										sup.c
-							li
-								a.sec(href="/d/b%E1%BA%A3o-v%E1%BB%87/search/sfc/sec?lang=vi" data-cat="sec")
-									span.txt
-										| bảo
-										| vệ
-										sup.c
-							li
-								a.rej(href="/d/b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n/search/sfc/rej?lang=vi" data-cat="rej")
-									span.txt
-										| bất động sản
-										sup.c
-							li
-								a.gov(href="/d/ch%C3%ADnh-ph%E1%BB%A7/search/sfc/gov?lang=vi" data-cat="gov")
-									span.txt
-										| chính
-										| phủ
-										sup.c
-							li
-								a.trd(href="/d/l.%C4%91%E1%BB%99ng-l%C3%A0nh-ngh%E1%BB%81-ngh%E1%BB%87-nh%C3%A2n/search/sfc/trd?lang=vi" data-cat="trd")
-									span.txt
-										| có tay nghề/thủ công
-										sup.c
-							li
-								a.csr(href="/d/d.v%E1%BB%A5-kh%C3%A1ch-h%C3%A0ng/search/sfc/csr?lang=vi" data-cat="csr")
-									span.txt
-										| d.vụ khách hàng
-										sup.c
-							li
-								a.edu(href="/d/gi%C3%A1o-d%E1%BB%A5c-d%E1%BA%A1y-h%E1%BB%8Dc/search/sfc/edu?lang=vi" data-cat="edu")
-									span.txt
-										| giáo dục
-										sup.c
-							li
-								a.ofc(href="/d/h.c-v.ph%C3%B2ng/search/sfc/ofc?lang=vi" data-cat="ofc")
-									span.txt
-										| h.chính/v.p
-										sup.c
-							li
-								a.sad(href="/d/h%E1%BB%87-th%E1%BB%91ng-m%E1%BA%A1ng/search/sfc/sad?lang=vi" data-cat="sad")
-									span.txt
-										| hệ thống / mạng
-										sup.c
-							li
-								a.tch(href="/d/h%E1%BB%97-tr%E1%BB%A3-k%E1%BB%B9-thu%E1%BA%ADt/search/sfc/tch?lang=vi" data-cat="tch")
-									span.txt
-										| hỗ trợ kỹ thuật
-										sup.c
-							li
-								a.bus(href="/d/kinh-doanh-q.l%C3%BD/search/sfc/bus?lang=vi" data-cat="bus")
-									span.txt
-										| k.d /
-										| q.lý
-										sup.c
-							li
-								a.acc(href="/d/k%E1%BA%BF-to%C3%A1n-t%C3%A0i-ch%C3%ADnh/search/sfc/acc?lang=vi" data-cat="acc")
-									span.txt
-										| k.toán+t.chính
-										sup.c
-							li
-								a.egr(href="/d/kt.s%C6%B0-k.s%C6%B0-t.k%E1%BA%BF-m.t-h.tr%E1%BB%A3/search/sfc/egr?lang=vi" data-cat="egr")
-									span.txt
-										| k.tr.sư / kỹ thuật
-										sup.c
-							li
-								a.npo(href="/d/phi-l.nhu%E1%BA%ADn/search/sfc/npo?lang=vi" data-cat="npo")
-									span.txt
-										| kv phi
-										| lợi nhuận
-										sup.c
-							li
-								a.lab(href="/d/l.%C4%91%E1%BB%99ng-chung/search/sfc/lab?lang=vi" data-cat="lab")
-									span.txt
-										| l.động
-										| chung
-										sup.c
-							li
-								a.hum(href="/d/nh%C3%A2n-s%E1%BB%B1/search/sfc/hum?lang=vi" data-cat="hum")
-									span.txt
-										| nhân
-										| sự
-										sup.c
-							li
-								a.med(href="/d/n.tht-t.th%C3%B4ng-t.k%E1%BA%BF/search/sfc/med?lang=vi" data-cat="med")
-									span.txt
-										| n.t
-										| / media / t.kế
-										sup.c
-							li
-								a.lgl(href="/d/ph.l%C3%BD-c%E1%BB%91-v%E1%BA%A5n-ph.l%C3%BD/search/sfc/lgl?lang=vi" data-cat="lgl")
-									span.txt
-										| pháp lý / tr.lý
-										sup.c
-							li
-								a.sof(href="/d/p.m%E1%BB%81m-%C4%91bcl-qtcsdl-v.v./search/sfc/sof?lang=vi" data-cat="sof")
-									span.txt
-										| phần mềm / qa / dba
-										sup.c
-							li
-								a.spa(href="/d/salon-spa-th%E1%BB%83-d%E1%BB%A5c/search/sfc/spa?lang=vi" data-cat="spa")
-									span.txt
-										| salon / spa / th.dục
-										sup.c
-							li
-								a.mnu(href="/d/s%E1%BA%A3n-xu%E1%BA%A5t/search/sfc/mnu?lang=vi" data-cat="mnu")
-									span.txt
-										| sản
-										| xuất
-										sup.c
-							li
-								a.sci(href="/d/k.h%E1%BB%8Dc-c.n-sinh-h%E1%BB%8Dc/search/sfc/sci?lang=vi" data-cat="sci")
-									span.txt
-										| sinh học / k.học
-										sup.c
-							li
-								a.mar(href="/d/ti%E1%BA%BFp-th%E1%BB%8B-qu%E1%BA%A3ng-c%C3%A1o-qhcc/search/sfc/mar?lang=vi" data-cat="mar")
-									span.txt
-										| tiếp thị / pr / qc
-										sup.c
-							li
-								a.web(href="/d/th.-k%E1%BA%BF-web-html-th.tin/search/sfc/web?lang=vi" data-cat="web")
-									span.txt
-										| t.kế
-										| web / t.tin
-										sup.c
-							li
-								a.fbh(href="/d/th%E1%BB%B1c-ph%E1%BA%A9m-%C4%91%E1%BB%93-u%E1%BB%91ng-kh%C3%A1ch-s%E1%BA%A1n/search/sfc/fbh?lang=vi" data-cat="fbh")
-									span.txt
-										| t.p / g.khát / ks
-										sup.c
-							li
-								a.tfr(href="/d/tv-phim-video-radio/search/sfc/tfr?lang=vi" data-cat="tfr")
-									span.txt
-										| tv /
-										| phim / video
-										sup.c
-							li
-								a.trp(href="/d/v%E1%BA%ADn-chuy%E1%BB%83n/search/sfc/trp?lang=vi" data-cat="trp")
-									span.txt
-										| vận
-										| tải
-										sup.c
-							li
-								a.wri(href="/d/so%E1%BA%A1n-th%E1%BA%A3o-bi%C3%AAn-t%E1%BA%ADp/search/sfc/wri?lang=vi" data-cat="wri")
-									span.txt
-										| viết / hiệu chỉnh
-										sup.c
-							li
-								a.etc(href="/d/v.v./search/sfc/etc?lang=vi" data-cat="etc")
-									span.txt
-										| vv / misc
-										sup.c
-							li
-								a.hea(href="/d/ch%C4%83m-s%C3%B3c-sk/search/sfc/hea?lang=vi" data-cat="hea")
-									span.txt
-										| y tế
-										| / sức khỏe
-										sup.c
-				#ggg.col
-					h4.ban
-						a.ggg(href="/d/v.l%C3%A0m/search/sfc/ggg?lang=vi" data-alltitle="mọi v.làm" data-cat="ggg")
-							span.txt
-								| v.làm
-								sup.c
-					.cats
-						ul#ggg0.left
-							li
-								a.cwg(href="/d/l.th%C3%AAm-nh%C3%B3m/search/sfc/cwg?lang=vi" data-cat="cwg")
-									span.txt
-										| đội
-										sup.c
-							li
-								a.dmg(href="/d/l.th%C3%AAm-gi.%C4%91%C3%ACnh/search/sfc/dmg?lang=vi" data-cat="dmg")
-									span.txt
-										| g.đình
-										sup.c
-							li
-								a.lbg(href="/d/l.th%C3%AAm-l.%C4%91/search/sfc/lbg?lang=vi" data-cat="lbg")
-									span.txt
-										| l.động
-										sup.c
-							li
-								a.cpg(href="/d/l.th%C3%AAm-m%C3%A1y-t%C3%ADnh/search/sfc/cpg?lang=vi" data-cat="cpg")
-									span.txt
-										| máy
-										| tính
-										sup.c
-						ul#ggg1.mc
-							li
-								a.crg(href="/d/l.th%C3%AAm-s%C3%A1ng-t%E1%BA%A1o/search/sfc/crg?lang=vi" data-cat="crg")
-									span.txt
-										| sáng tạo
-										sup.c
-							li
-								a.evg(href="/d/l.th%C3%AAm-s.k/search/sfc/evg?lang=vi" data-cat="evg")
-									span.txt
-										| s.kiện
-										sup.c
-							li
-								a.tlg(href="/d/l.th%C3%AAm-t.n%C4%83ng/search/sfc/tlg?lang=vi" data-cat="tlg")
-									span.txt
-										| t.năng
-										sup.c
-							li
-								a.wrg(href="/d/l.th%C3%AAm-vi%E1%BA%BFt/search/sfc/wrg?lang=vi" data-cat="wrg")
-									span.txt
-										| viết
-										sup.c
-				#rrr.col
-					h4.ban
-						a.rrr(href="/d/h%E1%BB%93-s%C6%A1/search/sfc/rrr?lang=vi" data-alltitle="t.cả hồ sơ" data-cat="rrr")
-							span.txt
-								| hồ sơ
-								sup.c
-					.cats
-		//- #rightbar
-			#langlinks
-				select#chlang.js-only(name="lang")
-					option(value="?lang=da&setlang=1") dansk
-					option(value="?lang=de&setlang=1") deutsch
-					option(value="?lang=en&cc=us&setlang=1") english
-					option(value="?lang=es&cc=mx&setlang=1") español
-					option(value="?lang=fr&setlang=1") français
-					option(value="?lang=it&setlang=1") italiano
-					option(value="?lang=pt&setlang=1") português
-					option(value="?lang=fi&setlang=1") suomi
-					option(value="?lang=sv&setlang=1") svenska
-					option(selected="" value="?lang=vi&setlang=1") tiếng việt
-					option(value="?lang=tr&setlang=1") türkçe
-					option(value="?lang=ru&setlang=1") русский
-					option(value="?lang=zh&setlang=1") 中文
-					option(value="?lang=ja&setlang=1") 日本語
-					option(value="?lang=ko&setlang=1") 한국말
-				br
-				a(href="?lang=en&setlang=1") english
-				#nojschlang.no-js
-					a(href="?lang=da&setlang=1") dansk
-					br
-					a(href="?lang=de&setlang=1") deutsch
-					br
-					a(href="?lang=en&cc=us&setlang=1") english
-					br
-					a(href="?lang=es&cc=mx&setlang=1") español
-					br
-					a(href="?lang=fr&setlang=1") français
-					br
-					a(href="?lang=it&setlang=1") italiano
-					br
-					a(href="?lang=pt&setlang=1") português
-					br
-					a(href="?lang=fi&setlang=1") suomi
-					br
-					a(href="?lang=sv&setlang=1") svenska
-					br
-					b
-						| tiếng
-						| việt
-					br
-					a(href="?lang=tr&setlang=1") türkçe
-					br
-					a(href="?lang=ru&setlang=1") русский
-					br
-					a(href="?lang=zh&setlang=1") 中文
-					br
-					a(href="?lang=ja&setlang=1") 日本語
-					br
-					a(href="?lang=ko&setlang=1") 한국말
-					br
-			ul.menu.collapsible
-				li.expand.s
-					h5.ban nearby cl
-					ul.acitem
-						li.s
-							a(href="//bakersfield.craigslist.org/?lang=vi") bakersfield
-						li.s
-							a(href="//chico.craigslist.org/?lang=vi") chico
-						li.s
-							a(href="//fresno.craigslist.org/?lang=vi") fresno
-						li.s
-							a(href="//goldcountry.craigslist.org/?lang=vi") gold country
-						li.s
-							a(href="//hanford.craigslist.org/?lang=vi") hanford
-						li.s
-							a(href="//humboldt.craigslist.org/?lang=vi") humboldt
-						li.s
-							a(href="//inlandempire.craigslist.org/?lang=vi") inland empire
-						li.s
-							a(href="//klamath.craigslist.org/?lang=vi") klamath falls
-						li.s
-							a(href="//lasvegas.craigslist.org/?lang=vi") las vegas
-						li.s
-							a(href="//losangeles.craigslist.org/?lang=vi") los angeles
-						li.s
-							a(href="//medford.craigslist.org/?lang=vi") medford
-						li.s
-							a(href="//mendocino.craigslist.org/?lang=vi") mendocino co
-						li.s
-							a(href="//merced.craigslist.org/?lang=vi") merced
-						li.s
-							a(href="//modesto.craigslist.org/?lang=vi") modesto
-						li.s
-							a(href="//monterey.craigslist.org/?lang=vi") monterey
-						li.s
-							a(href="//orangecounty.craigslist.org/?lang=vi") orange co
-						li.s
-							a(href="//palmsprings.craigslist.org/?lang=vi") palm springs
-						li.s
-							a(href="//redding.craigslist.org/?lang=vi") redding
-						li.s
-							a(href="//reno.craigslist.org/?lang=vi") reno
-						li.s
-							a(href="//roseburg.craigslist.org/?lang=vi") roseburg
-						li.s
-							a(href="//sacramento.craigslist.org/?lang=vi") sacramento
-						li.s
-							a(href="//slo.craigslist.org/?lang=vi") san luis obispo
-						li.s
-							a(href="//santabarbara.craigslist.org/?lang=vi") santa barbara
-						li.s
-							a(href="//santamaria.craigslist.org/?lang=vi") santa maria
-						li.s
-							a(href="//siskiyou.craigslist.org/?lang=vi") siskiyou co
-						li.s
-							a(href="//stockton.craigslist.org/?lang=vi") stockton
-						li.s
-							a(href="//susanville.craigslist.org/?lang=vi") susanville
-						li.s
-							a(href="//ventura.craigslist.org/?lang=vi") ventura
-						li.s
-							a(href="//visalia.craigslist.org/?lang=vi") visalia-tulare
-						li.s
-							a(href="//yubasutter.craigslist.org/?lang=vi") yuba-sutter
-				li.s
-					h5.ban t.phố mỹ
-					ul.acitem
-						li
-							a(href="http://atlanta.craigslist.org/?lang=vi") atlanta
-						li
-							a(href="http://austin.craigslist.org/?lang=vi") austin
-						li
-							a(href="http://boston.craigslist.org/?lang=vi") boston
-						li
-							a(href="http://chicago.craigslist.org/?lang=vi") chicago
-						li
-							a(href="http://dallas.craigslist.org/?lang=vi") dallas
-						li
-							a(href="http://denver.craigslist.org/?lang=vi") denver
-						li
-							a(href="http://detroit.craigslist.org/?lang=vi") detroit
-						li
-							a(href="http://houston.craigslist.org/?lang=vi") houston
-						li
-							a(href="http://lasvegas.craigslist.org/?lang=vi") lasÂ vegas
-						li
-							a(href="http://losangeles.craigslist.org/?lang=vi") losÂ angeles
-						li
-							a(href="http://miami.craigslist.org/?lang=vi") miami
-						li
-							a(href="http://minneapolis.craigslist.org/?lang=vi") minneapolis
-						li
-							a(href="http://newyork.craigslist.org/?lang=vi") newÂ york
-						li
-							a(href="http://orangecounty.craigslist.org/?lang=vi") orangeÂ co
-						li
-							a(href="http://philadelphia.craigslist.org/?lang=vi") philadelphia
-						li
-							a(href="http://phoenix.craigslist.org/?lang=vi") phoenix
-						li
-							a(href="http://portland.craigslist.org/?lang=vi") portland
-						li
-							a(href="http://raleigh.craigslist.org/?lang=vi") raleigh
-						li
-							a(href="http://sacramento.craigslist.org/?lang=vi") sacramento
-						li
-							a(href="http://sandiego.craigslist.org/?lang=vi") sanÂ diego
-						li
-							a(href="http://seattle.craigslist.org/?lang=vi") seattle
-						li
-							a(href="http://sfbay.craigslist.org/?lang=vi") sfÂ bayarea
-						li
-							a(href="http://washingtondc.craigslist.org/?lang=vi") wash dc
-						li.s.more
-							a(href="//geo.craigslist.org/iso/us?lang=vi") thêm ...
-				li
-					h5.ban t.bang mỹ
-					ul.acitem
-						li
-							a(href="//geo.craigslist.org/iso/us/al?lang=vi") alabama
-						li
-							a(href="//geo.craigslist.org/iso/us/ak?lang=vi") alaska
-						li
-							a(href="//geo.craigslist.org/iso/us/az?lang=vi") arizona
-						li
-							a(href="//geo.craigslist.org/iso/us/ar?lang=vi") arkansas
-						li
-							a(href="//geo.craigslist.org/iso/us/nd?lang=vi") bắc dakota
-						li
-							a(href="//geo.craigslist.org/iso/us/nc?lang=vi") b carolina
-						li
-							a(href="//geo.craigslist.org/iso/us/nh?lang=vi") b hampshire
-						li
-							a(href="//geo.craigslist.org/iso/us/ca?lang=vi") california
-						li
-							a(href="//geo.craigslist.org/iso/us/co?lang=vi") colorado
-						li
-							a(href="//geo.craigslist.org/iso/us/ct?lang=vi") connecticut
-						li
-							a(href="//geo.craigslist.org/iso/us/dc?lang=vi") dc
-						li
-							a(href="//geo.craigslist.org/iso/us/de?lang=vi") delaware
-						li
-							a(href="//geo.craigslist.org/iso/us/ri?lang=vi") đảo rhode
-						li
-							a(href="//geo.craigslist.org/iso/us/fl?lang=vi") florida
-						li
-							a(href="//geo.craigslist.org/iso/us/ga?lang=vi") georgia
-						li
-							a(href="//geo.craigslist.org/iso/gu?lang=vi") guam
-						li
-							a(href="//geo.craigslist.org/iso/us/hi?lang=vi") hawaii
-						li
-							a(href="//geo.craigslist.org/iso/us/id?lang=vi") idaho
-						li
-							a(href="//geo.craigslist.org/iso/us/il?lang=vi") illinois
-						li
-							a(href="//geo.craigslist.org/iso/us/in?lang=vi") indiana
-						li
-							a(href="//geo.craigslist.org/iso/us/ia?lang=vi") iowa
-						li
-							a(href="//geo.craigslist.org/iso/us/ks?lang=vi") kansas
-						li
-							a(href="//geo.craigslist.org/iso/us/ky?lang=vi") kentucky
-						li
-							a(href="//geo.craigslist.org/iso/us/la?lang=vi") louisiana
-						li
-							a(href="//geo.craigslist.org/iso/us/me?lang=vi") maine
-						li
-							a(href="//geo.craigslist.org/iso/us/md?lang=vi") maryland
-						li
-							a(href="//geo.craigslist.org/iso/us/ma?lang=vi") mass
-						li
-							a(href="//geo.craigslist.org/iso/us/mi?lang=vi") michigan
-						li
-							a(href="//geo.craigslist.org/iso/us/mn?lang=vi") minnesota
-						li
-							a(href="//geo.craigslist.org/iso/us/ms?lang=vi") mississippi
-						li
-							a(href="//geo.craigslist.org/iso/us/mo?lang=vi") missouri
-						li
-							a(href="//geo.craigslist.org/iso/us/mt?lang=vi") montana
-						li
-							a(href="//geo.craigslist.org/iso/us/sd?lang=vi") nam dakota
-						li
-							a(href="//geo.craigslist.org/iso/us/sc?lang=vi") b carolina
-						li
-							a(href="//geo.craigslist.org/iso/us/ne?lang=vi") nebraska
-						li
-							a(href="//geo.craigslist.org/iso/us/nv?lang=vi") nevada
-						li
-							a(href="//geo.craigslist.org/iso/us/nj?lang=vi") new jersey
-						li
-							a(href="//geo.craigslist.org/iso/us/nm?lang=vi") new mexico
-						li
-							a(href="//geo.craigslist.org/iso/us/ny?lang=vi") new york
-						li
-							a(href="//geo.craigslist.org/iso/us/oh?lang=vi") ohio
-						li
-							a(href="//geo.craigslist.org/iso/us/ok?lang=vi") oklahoma
-						li
-							a(href="//geo.craigslist.org/iso/us/or?lang=vi") oregon
-						li
-							a(href="//geo.craigslist.org/iso/us/pa?lang=vi") pennsylvania
-						li
-							a(href="//geo.craigslist.org/iso/pr?lang=vi") puerto rico
-						li
-							a(href="//geo.craigslist.org/iso/us/wv?lang=vi") tây virginia
-						li
-							a(href="//geo.craigslist.org/iso/us/tn?lang=vi") tennessee
-						li
-							a(href="//geo.craigslist.org/iso/us/tx?lang=vi") texas
-						li
-							a(href="//geo.craigslist.org/iso/us/ut?lang=vi") utah
-						li
-							a(href="//geo.craigslist.org/iso/us/vt?lang=vi") vermont
-						li
-							a(href="//geo.craigslist.org/iso/us/va?lang=vi") virginia
-						li
-							a(href="//geo.craigslist.org/iso/us/wa?lang=vi") washington
-						li
-							a(href="//geo.craigslist.org/iso/us/wi?lang=vi") wisconsin
-						li
-							a(href="//geo.craigslist.org/iso/us/wy?lang=vi") wyoming
-						li.s.more
-							a(href="//geo.craigslist.org/iso/us?lang=vi") thêm ...
-				li.s
-					h5.ban canada
-					ul.acitem
-						li
-							a(href="//calgary.craigslist.org/?lang=vi") calgary
-						li
-							a(href="//edmonton.craigslist.org/?lang=vi") edmonton
-						li
-							a(href="//halifax.craigslist.org/?lang=vi") halifax
-						li
-							a(href="//montreal.craigslist.org/?lang=vi") montreal
-						li
-							a(href="//ottawa.craigslist.org/?lang=vi") ottawa
-						li
-							a(href="//saskatoon.craigslist.org/?lang=vi") saskatoon
-						li
-							a(href="//toronto.craigslist.org/?lang=vi") toronto
-						li
-							a(href="//vancouver.craigslist.org/?lang=vi") vancouver
-						li
-							a(href="//victoria.craigslist.org/?lang=vi") victoria
-						li
-							a(href="//winnipeg.craigslist.org/?lang=vi") winnipeg
-						li.s.more
-							a(href="//geo.craigslist.org/iso/ca?lang=vi") thêm ...
-				li
-					h5.ban cl th.giới
-					ul.acitem.collapsible
-						li.cont.s
-							h5 americas
-							ul.acitem
-								li
-									a(href="//geo.craigslist.org/iso/ar?lang=vi") argentina
-								li
-									a(href="//geo.craigslist.org/iso/bo?lang=vi") bolivia
-								li
-									a(href="http://rio.craigslist.org/?lang=vi") brazil
-								li
-									a(href="https://www.craigslist.org/about/sites?lang=vi#CA") canada
-								li
-									a(href="//geo.craigslist.org/iso/cl?lang=vi") chile
-								li
-									a(href="//geo.craigslist.org/iso/co?lang=vi") colombia
-								li
-									a(href="//geo.craigslist.org/iso/cr?lang=vi") costa rica
-								li
-									a(href="//geo.craigslist.org/iso/do?lang=vi") dom republic
-								li
-									a(href="//geo.craigslist.org/iso/ec?lang=vi") ecuador
-								li
-									a(href="//geo.craigslist.org/iso/sv?lang=vi") el salvador
-								li
-									a(href="//geo.craigslist.org/iso/gt?lang=vi") guatemala
-								li
-									a(href="https://www.craigslist.org/about/sites?lang=vi#US") hoa kỳ
-								li
-									a(href="http://mexicocity.craigslist.org/?lang=vi") mexico
-								li
-									a(href="//geo.craigslist.org/iso/ni?lang=vi") nicaragua
-								li
-									a(href="//geo.craigslist.org/iso/pa?lang=vi") panama
-								li
-									a(href="//geo.craigslist.org/iso/pe?lang=vi") peru
-								li
-									a(href="//geo.craigslist.org/iso/pr?lang=vi") puerto rico
-								li
-									a(href="//geo.craigslist.org/iso/uy?lang=vi") uruguay
-								li
-									a(href="//geo.craigslist.org/iso/vi?lang=vi") us virgin islands
-								li
-									a(href="//geo.craigslist.org/iso/ve?lang=vi") venezuela
-						li.cont.s
-							h5 asia
-							ul.acitem
-								li
-									a(href="http://bangalore.craigslist.org/?lang=vi") ấn độ
-								li
-									a(href="//geo.craigslist.org/iso/bd?lang=vi") bangladesh
-								li
-									a(href="http://shanghai.craigslist.org/?lang=vi") china
-								li
-									a(href="//geo.craigslist.org/iso/tw?lang=vi") đ.loan
-								li
-									a(href="//geo.craigslist.org/iso/hk?lang=vi") hong kong
-								li
-									a(href="//geo.craigslist.org/iso/id?lang=vi") indonesia
-								li
-									a(href="//geo.craigslist.org/iso/ir?lang=vi") iran
-								li
-									a(href="//geo.craigslist.org/iso/iq?lang=vi") iraq
-								li
-									a(href="http://telaviv.craigslist.org/?lang=vi") israel
-								li
-									a(href="//geo.craigslist.org/iso/kw?lang=vi") kuwait
-								li
-									a(href="//geo.craigslist.org/iso/lb?lang=vi") lebanon
-								li
-									a(href="//geo.craigslist.org/iso/my?lang=vi") malaysia
-								li
-									a(href="http://moscow.craigslist.org/?lang=vi") nga
-								li
-									a(href="http://tokyo.craigslist.org/?lang=vi") nhật
-								li
-									a(href="//geo.craigslist.org/iso/pk?lang=vi") pakistan
-								li
-									a(href="http://manila.craigslist.org/?lang=vi") philippines
-								li
-									a(href="http://singapore.craigslist.org/?lang=vi") singapore
-								li
-									a(href="//geo.craigslist.org/iso/kr?lang=vi") south korea
-								li
-									a(href="//geo.craigslist.org/iso/th?lang=vi") thái lan
-								li
-									a(href="//geo.craigslist.org/iso/tr?lang=vi") t.n.kỳ
-								li
-									a(href="//geo.craigslist.org/iso/ae?lang=vi") uae
-								li
-									a(href="//geo.craigslist.org/iso/vn?lang=vi") vietnam
-								li
-									a(href="//geo.craigslist.org/iso/ps?lang=vi") west bank
-						li.cont.s
-							h5 châu âu
-							ul.acitem
-								li
-									a(href="//geo.craigslist.org/iso/ie?lang=vi") ai len
-								li
-									a(href="//geo.craigslist.org/iso/at?lang=vi") áo
-								li
-									a(href="//geo.craigslist.org/iso/pl?lang=vi") ba lan
-								li
-									a(href="//geo.craigslist.org/iso/be?lang=vi") bỉ
-								li
-									a(href="//geo.craigslist.org/iso/pt?lang=vi") bồ đ.nha
-								li
-									a(href="//geo.craigslist.org/iso/bg?lang=vi") bulgaria
-								li
-									a(href="//geo.craigslist.org/iso/cz?lang=vi") cộng hòa séc
-								li
-									a(href="//geo.craigslist.org/iso/hr?lang=vi") croatia
-								li
-									a(href="//geo.craigslist.org/iso/dk?lang=vi") đan mạch
-								li
-									a(href="http://berlin.craigslist.org/?lang=vi") đức
-								li
-									a(href="//geo.craigslist.org/iso/nl?lang=vi") hà lan
-								li
-									a(href="//geo.craigslist.org/iso/hu?lang=vi") hungary
-								li
-									a(href="//geo.craigslist.org/iso/gr?lang=vi") hy lạp
-								li
-									a(href="//geo.craigslist.org/iso/is?lang=vi") iceland
-								li
-									a(href="//geo.craigslist.org/iso/lu?lang=vi") luxembourg
-								li
-									a(href="//geo.craigslist.org/iso/no?lang=vi") na uy
-								li
-									a(href="http://moscow.craigslist.org/?lang=vi") nga
-								li
-									a(href="http://paris.craigslist.org/?lang=vi") pháp
-								li
-									a(href="//geo.craigslist.org/iso/fi?lang=vi") ph.lan
-								li
-									a(href="//geo.craigslist.org/iso/ro?lang=vi") romania
-								li
-									a(href="http://madrid.craigslist.org/?lang=vi") tbn
-								li
-									a(href="//geo.craigslist.org/iso/se?lang=vi") t.điển
-								li
-									a(href="http://zurich.craigslist.org/?lang=vi") thụy sỹ
-								li
-									a(href="//geo.craigslist.org/iso/tr?lang=vi") t.n.kỳ
-								li
-									a(href="//geo.craigslist.org/iso/ua?lang=vi") ukraina
-								li
-									a(href="//geo.craigslist.org/iso/gb?lang=vi") vương quốc anh
-								li
-									a(href="http://rome.craigslist.org/?lang=vi") ý
-						li.cont.s
-							h5 ch.phi
-							ul.acitem
-								li
-									a(href="//geo.craigslist.org/iso/eg?lang=vi") a.cập
-								li
-									a(href="//geo.craigslist.org/iso/et?lang=vi") ethiopia
-								li
-									a(href="//geo.craigslist.org/iso/gh?lang=vi") ghana
-								li
-									a(href="//geo.craigslist.org/iso/ke?lang=vi") kenya
-								li
-									a(href="//geo.craigslist.org/iso/ma?lang=vi") morocco
-								li
-									a(href="//geo.craigslist.org/iso/za?lang=vi") nam phi
-								li
-									a(href="//geo.craigslist.org/iso/tn?lang=vi") tunisia
-						li.cont.s
-							h5 oceania
-							ul.acitem
-								li
-									a(href="//geo.craigslist.org/iso/gu?lang=vi") guam
-								li
-									a(href="http://auckland.craigslist.org/?lang=vi") new zealand
-								li
-									a(href="http://manila.craigslist.org/?lang=vi") philippines
-								li
-									a(href="http://sydney.craigslist.org/?lang=vi") úc
-						li.cont.s
-							h5 trung đông
-							ul.acitem
-								li
-									a(href="//geo.craigslist.org/iso/eg?lang=vi") a.cập
-								li
-									a(href="//geo.craigslist.org/iso/iq?lang=vi") iraq
-								li
-									a(href="http://telaviv.craigslist.org/?lang=vi") israel
-								li
-									a(href="//geo.craigslist.org/iso/kw?lang=vi") kuwait
-								li
-									a(href="//geo.craigslist.org/iso/lb?lang=vi") lebanon
-								li
-									a(href="//geo.craigslist.org/iso/tr?lang=vi") t.n.kỳ
-								li
-									a(href="//geo.craigslist.org/iso/ae?lang=vi") uae
-								li
-									a(href="//geo.craigslist.org/iso/ps?lang=vi") west bank
-			br
-			p.more
-				a(href="https://www.craigslist.org/about/sites?lang=vi")
-					em hơn...
-	
-	
-	
+			.col-lg-7.p-lg-0
+				.row
+					.col-12
+						nav.navtop.regular
+							.regular-area
+								h2.area thành phố hồ chí minh
+								ul.sublinks
+									li
+										a(href="#" title="hồ chí minh") hcm
+									li
+										a(href="#" title="hà nội") hn
+									li
+										a(href="#" title="cà mau") cm
+									li
+										a(href="#" title="đà nẵng") dn
+									li
+										a(href="#" title="đà lạt") dl
+							.enter-area
+								input.subarea-input.flatinput(type="text" data-autocomplete="subarea" value="")
+								.exit-subarea ×
+							.custom-area.no-name
+								h2.area đất đỏ
+								.radius-info
+									| trong vòng 
+									span.distance 1
+									|  km đến 
+									span.postal 5
+									|  km
+				.row.center
+					.col-lg-4
+						.community
+							h4.title
+								a(href="#") cộng đồng
+							ul.nav
+								li
+									a(href="#") hoạt động
+								li
+									a(href="#") nghệ thuật
+								li
+									a(href="#") chăm sóc trẻ em
+								li
+									a(href="#") lớp học
+								li
+									a(href="#") sự kiện
+								li
+									a(href="#") đánh rơi / tìm kiếm
+								li
+									a(href="#") nhóm
+								li
+									a(href="#") tin địa phương
+								li
+									a(href="#") chung
+								li
+									a(href="#") bỏ lỡ
+								li
+									a(href="#") âm nhạc
+								li
+									a(href="#") thú cưng
+								li
+									a(href="#") chính trị
+								li
+									a(href="#") xe ôm
+								li
+									a(href="#") tình nguyện
+						.services
+							h4.title
+								a(href="#") dịch vụ
+							ul.nav
+								li
+									a(href="#") ô tô
+								li
+									a(href="#") làm đẹp
+								li
+									a(href="#") điện thoại
+								li
+									a(href="#") máy tính
+								li
+									a(href="#") sáng tạo
+								li
+									a(href="#") chu kỳ
+								li
+									a(href="#") sự kiện
+								li
+									a(href="#") nông trại
+								li
+									a(href="#") lao động / di chuyển
+								li
+									a(href="#") tài chính
+								li
+									a(href="#") hộ gia đình
+								li
+									a(href="#") hợp pháp
+								li
+									a(href="#") bài học
+								li
+									a(href="#") biển
+								li
+									a(href="#") thú cưng
+								li
+									a(href="#") địa ốc
+								li
+									a(href="#") thương mại
+								li
+									a(href="#") du lịch / nghỉ dưỡng
+						.forums
+							h4.title
+								a(href="#") diễn dàn
+							ul.nav
+								li
+									a(href="#") android
+								li
+									a(href="#") ios
+								li
+									a(href="#") hình ảnh
+								li
+									a(href="#") ăn chay
+								li
+									a(href="#") trợ giúp
+								li
+									a(href="#") gia đình
+								li
+									a(href="#") khoa học
+								li
+									a(href="#") game
+								li
+									a(href="#") làm đẹp
+								li
+									a(href="#") lịch sử
+								li
+									a(href="#") máy tính
+								li
+									a(href="#") du lịch / nghỉ dưỡng
+								li
+									a(href="#") phản hồi
+								li
+									a(href="#") phim
+								li
+									a(href="#") robot
+								li
+									a(href="#") thuế
+								li
+									a(href="#") tâm lý
+								li
+									a(href="#") truyện cười
+								li
+									a(href="#") thể thao
+								li
+									a(href="#") tivi
+								li
+									a(href="#") viết lách
+								li
+									a(href="#") việc làm
+								li
+									a(href="#") vật nuôi
+								li
+									a(href="#") nông trại
+					.col-lg-4
+						.housing
+							h4.title
+								a(href="#") nhà đất
+							ul.nav
+								li
+									a(href="#") bất động sản
+								li
+									a(href="#") căn hộ / nhà ở
+								li
+									a(href="#") thuê phòng
+								li
+									a(href="#") cho thuê nghỉ dưỡng
+								li
+									a(href="#") cho thuê lại
+								li
+									a(href="#") đổi nhà
+								li
+									a(href="#") chỗ đậu xe / nhà kho
+								li
+									a(href="#") phòng trọ / ở ghép
+								li
+									a(href="#") văn phòng / thương mại
+						.forsale
+							h4.title
+								a(href="#") cần bán
+							ul.nav
+								li
+									a(href="#") hình ảnh / video
+								li
+									a(href="#") bánh xe / lốp xe
+								li
+									a(href="#") bộ sưu tập
+								li
+									a(href="#") dụng cụ
+								li
+									a(href="#") di động
+								li
+									a(href="#") đồ chơi / game
+								li
+									a(href="#") sức khỏe và sắc đẹp
+								li
+									a(href="#") điện tử
+								li
+									a(href="#") đồ cổ
+								li
+									a(href="#") video game
+								li
+									a(href="#") gia đình
+								li
+									a(href="#") hàng không
+								li
+									a(href="#") linh kiện tàu lửa
+								li
+									a(href="#") phụ tùng máy tính
+								li
+									a(href="#") phụ tùng ô tô
+								li
+									a(href="#") quần áo / phụ kiện
+								li
+									a(href="#") trang trại
+								li
+									a(href="#") sách
+								li
+									a(href="#") thiết bị nặng
+								li
+									a(href="#") thanh lý
+								li
+									a(href="#") thể thao
+								li
+									a(href="#") thiết bị
+								li
+									a(href="#") tổng hợp
+								li
+									a(href="#") thuyền
+								li
+									a(href="#") trao đổi
+								li
+									a(href="#") viết báo / hiệu chỉnh
+								li
+									a(href="#") làm phim
+								li
+									a(href="#") di động
+								li
+									a(href="#") đồ chơi / game
+								li
+									a(href="#") sức khỏe và sắc đẹp
+								li
+									a(href="#") điện tử
+								li
+									a(href="#") đồ cổ
+								li
+									a(href="#") video game
+								li
+									a(href="#") gia đình
+					.col-lg-4
+						.jobs
+							h4.title
+								a(href="#") việc làm
+							ul.nav
+								li
+									a(href="#") bán hàng / kinh doanh
+								li
+									a(href="#") sỉ / lẻ
+								li
+									a(href="#") bảo vệ
+								li
+									a(href="#") bất động sản
+								li
+									a(href="#") chính phủ
+								li
+									a(href="#") có tay nghề / thủ công
+								li
+									a(href="#") dịch vụ
+								li
+									a(href="#") khách hàng
+								li
+									a(href="#") giáo dục
+								li
+									a(href="#") hành chính
+								li
+									a(href="#") văn phòng
+								li
+									a(href="#") hệ thống / mạng
+								li
+									a(href="#") hỗ trợ kỹ thuật
+								li
+									a(href="#") kinh doanh / quản lý
+								li
+									a(href="#") kế toán / tài chính
+								li
+									a(href="#") kỹ sư / kỹ thuật
+								li
+									a(href="#") phi lợi nhuận
+								li
+									a(href="#") nhân sự
+								li
+									a(href="#") sức khỏe / y tế
+								li
+									a(href="#") phần mềm
+								li
+									a(href="#") salon / spa
+								li
+									a(href="#") sản xuất
+								li
+									a(href="#") sinh học
+								li
+									a(href="#") khoa học
+								li
+									a(href="#") tiếp thị / pr 
+								li
+									a(href="#") vận tải
+						.gigs
+							h4.title
+								a(href="#") hợp động biểu diễn
+							ul.nav
+								li
+									a(href="#") máy tính
+								li
+									a(href="#") sáng tạo
+								li
+									a(href="#") sự kiện
+								li
+									a(href="#") trong nước 
+								li
+									a(href="#") lao động
+								li
+									a(href="#") viết
+						.resumes
+							h4.title
+								a(href="#") sơ yếu lí lịch
+			.col-lg-2
+				.rightbar
+					.langlinks
+						select(name="lang")
+							option(value="") dansk
+							option(value="") deutsch
+							option(value="") english
+							option(value="") español
+							option(value="") français
+							option(value="") italiano
+							option(value="") português
+							option(value="") suomi
+							option(value="") svenska
+							option(selected="" value="") tiếng việt
+							option(value="") türkçe
+							option(value="") русский
+							option(value="") 中文
+							option(value="") 日本語
+							option(value="") 한국말
+						a.langcur(href="") english
+					.menu
+						.title khu vực lân cận
+						ul.accordion#ABCD
+							li.item
+								a(href="#") bà rịa vũng tàu
+							li.item
+								a(href="#") đồng nai
+							li.item
+								a(href="#") bình dương
+							li.item
+								a(href="#") tiền giang
+							li.item
+								a(href="#") long an
+							li.item
+								a(href="#") bến tre
+							li.item
+								a(href="#") bình phước
+						.title thành phố của việt nam
+						ul.accordion
+							li.item
+								a(href="#") bà rịa vũng tàu
+							li.item
+								a(href="#") đồng nai
+							li.item
+								a(href="#") bình dương
+							li.item
+								a(href="#") tiền giang
+							li.item
+								a(href="#") long an
+							li.item
+								a(href="#") bến tre
+							li.item
+								a(href="#") bình phước
+						.title thành phố trung ương
+						ul.accordion
+							li.item
+								a(href="#") bà rịa vũng tàu
+							li.item
+								a(href="#") đồng nai
+							li.item
+								a(href="#") bình dương
+							li.item
+								a(href="#") tiền giang
+							li.item
+								a(href="#") long an
+							li.item
+								a(href="#") bến tre
+							li.item
+								a(href="#") bình phước
 	//- footer
 	//- 	ul.clfooter
 	//- 		li
