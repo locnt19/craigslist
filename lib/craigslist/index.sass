@@ -73,14 +73,6 @@
 			background-image: url(../image/sprite-32px.png)
 			background-size: 16px
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-		margin: 0
-		padding: 0
-		border: 0
-		font-size: 100%
-		font: inherit
-		vertical-align: baseline
-
 	blockquote, q
 		quotes: none
 
@@ -100,17 +92,6 @@
 
 	pre
 		font-family: monospace
-
-		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
-			display: block
-
-	template
-		display: none
-
-	html
-		&.js .no-js, &.no-js .js-only, &.canvas .no-canvas, &.no-canvas .canvas-only, &.draggable .no-draggable, &.no-draggable .draggable-only, &.fileAPI .no-fileAPI, &.no-fileAPI .fileAPI-only, &.hashChange .no-hashChange, &.no-hashChange .hashChange, &.localStorage .no-localStorage, &.no-localStorage .localStorage, &.pushState .no-pushState, &.no-pushState .pushState, &.placeholder .no-placeholder, &.no-placeholder .placeholder-only html.touchCapable .no-touchCapable, &.no-touchCapable .touchCapable-only
-			display: none
-
 	body
 		&.mobile .no-mobile, .mobile-only
 			display: none
@@ -121,19 +102,6 @@
 	.hideme
 		display: none
 
-	.screen-reader-text
-		-webkit-touch-callout: none
-		-webkit-user-select: none
-		-khtml-user-select: none
-		-moz-user-select: none
-		-ms-user-select: none
-		user-select: none
-		position: absolute
-		left: -10000px
-		top: auto
-		width: 1px
-		height: 1px
-		overflow: hidden
 
 	html
 		height: 100%
@@ -156,8 +124,8 @@
 		font-weight: bold
 		font-style: normal
 
-	strong, .strong
-		font-weight: bolder
+	span 
+		font-weight: 400
 
 	big, .big
 		font-size: larger
@@ -188,12 +156,6 @@
 	ul.ul, ol.ol
 		padding-left: 40px
 		margin: 1em 0
-
-	ul.ul
-		list-style-type: disc
-
-	ol.ol
-		list-style-type: decimal
 
 	ul.ul li, ol.ol li
 		display: list-item
@@ -947,11 +909,6 @@
 		font-size: .67em
 		line-height: .67em
 		margin: 2em 0
-	ul, ol
-		margin: 1em 0
-		padding-left: 40px
-	ul
-		list-style-type: disc
 	dl
 		margin: 1em 0
 	dd
@@ -977,25 +934,6 @@
 		border: thin solid #222
 		vertical-align: middle
 
-	.about
-	.simple-page-content a, &.simple-page-content a
-		text-decoration: none
-	.simple-page-content a:hover, &.simple-page-content a:hover
-		text-decoration: underline
-
-	.mobile .simple-page-content
-		margin: 4px
-
-	#fakePage
-		position: relative
-
-	#mailFlagsSpinner, #mailFlagsThanks
-		display: none
-		min-height: 75px
-
-	#frog
-		margin-left: 40px
-
 	.geo-site-list-container
 		margin: 1em 5em
 		h1
@@ -1003,8 +941,6 @@
 			line-height: 1em
 			margin: 1.33em 0
 
-	.geo-site-list
-		list-style: none
 	a
 		text-decoration: none
 	em
@@ -1066,3 +1002,8 @@
 		color: red
 	footer
 		display: block
+	#hh-conten 
+		margin: 1rem 0
+		font-weight: bolder
+		font-size: 15px
+
