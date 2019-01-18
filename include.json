@@ -1,17 +1,22 @@
 {
-    "SETUP": {
-        "index": {
-            "body": [
-                "home"
-            ]
-        },
-        "craigslist": {
-            "body": [
-                "craigslist"
+	"SETUP": {
+		"index": {
+			"body": [
+				"home"
+			]
+		},
+		"details": {
+			"body": [
+				"details"
+			]
+		},
+		"craigslist": {
+			"body": [
+				"craigslist"
 			],
 			"footer": [
-                "footer"
-            ]
-        }
-    }
+				"footer"
+			]
+		}
+	}
 }

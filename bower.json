@@ -25,7 +25,7 @@
     "lodash": "4.17.10",
     "bootstrap-validator": "0.11.9",
     "select2": "4.0.5",
-    "lightgallery": "1.6.11",
+    "lightgallery": "^1.6.11",
     "freewall": "1.0.6",
     "seiyria-bootstrap-slider": "10.2.0",
     "slick-carousel": "1.8.1",
@@ -37,6 +37,14 @@
     "linearicons": "1.0.1",
     "fancybox": "3.3.5",
     "jquery.scrollbar": "0.2.11",
-    "swiper": "4.3.5"
+    "swiper": "4.3.5",
+    "lg-thumbnail": "^1.1.0",
+    "lg-autoplay": "^1.0.4",
+    "lg-video": "^1.2.2",
+    "lg-fullscreen": "^1.0.1",
+    "lg-pager": "^1.0.2",
+    "lg-zoom": "^1.1.0",
+    "lg-hash": "^1.0.4",
+    "lg-share": "^1.1.0"
   }
 }
