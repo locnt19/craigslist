@@ -1,0 +1,28 @@
+.global
+	.header-global
+		.list
+			a.header-logo(name='logoLink', href='/?lang=vi') CL
+		.adminlinks
+			ul.actions
+				li.user
+					a(href='#') đăng nhập
+				li.user
+					a(href='#') tài khoản
+			ul.user-favs-discards
+				li.user
+					.favorites.off
+						a.favlink(href='#')
+							span.icon.icon-star.fav(aria-hidden='true')
+							span.fav-number 0
+							span.fav-label  mục y.thích
+				li.user.discards
+					form.unfavform.js-only(method='POST', action='/favorites?lang=vi')
+						.to-banish-page
+							input.lastLink(type='hidden', name='lastLink', value='//sfbay.craigslist.org/search/sss?s=120&sort=priceasc&lang=vi')
+							input.lastTitle(type='hidden', name='lastTitle', value='khu vịnh SF cần bán  - craigslist')
+							input.unfaves(type='hidden', name='fl', value='djg4amw0a2Y6Njc5NDQyNzg3MA==')
+							input(type='hidden', name='uf', value='1')
+							a.to-banish-page-link(href='#')
+								span.icon.icon-trash.red(aria-hidden='true')
+								span.banished_count 1
+								span.discards-label  ẩn

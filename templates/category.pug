@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "category"
+	- var description = "Description for category page"
+	- var bodyclass = "category"
+	- var href = "/category.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/category/index.pug
+block footer
+	include ../lib/footer/index.pug

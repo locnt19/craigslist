@@ -1,0 +1,10 @@
+extends _layout/layout.pug
+block variables
+	- var title = "privacy"
+	- var description = "Description for privacy page"
+	- var bodyclass = "privacy"
+	- var href = "/privacy.html"
+block body
+	include ../lib/privacy/index.pug
+block footer
+	include ../lib/footer/index.pug

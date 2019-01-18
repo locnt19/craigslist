@@ -1,0 +1,29 @@
+@import ../../_includes
+
+footer
+	padding: 1rem 0
+	background: #efefef
+	.clfooter 
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		flex-direction: column
+		+media-breakpoint-up(sm)
+			flex-direction: row
+		li 
+			font-size: 15px
+			+ li 
+				margin-top: 1rem
+				+media-breakpoint-up(sm)
+					margin-top: 0
+					margin-left: 1rem
+				a 
+					text-decoration: none 
+					color: #404040
+					font-size: 15px
+					+media-breakpoint-up(sm)
+						font-size: small
+						color: #005eab
+				sup 
+					font-size: .6rem 
