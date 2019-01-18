@@ -1,0 +1,513 @@
+@import ../../_includes
+
+.craigslist_2
+	.global
+		z-index: 1
+		background: #0073a6 
+		padding-top: .5rem 
+		padding-bottom: .5rem
+		.header-global
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.list 
+				display: flex
+				align-items: center
+				.header-logo 
+					margin: 0
+				// .breadcrumbs-container
+				// 	margin-left: 1rem
+				// 	.breadcrumbs 
+				// 		margin-top: 0
+				// 		.crumb 
+				// 			margin-right: .5rem
+				// 		i 
+				// 			margin-left: .5rem
+				// 			color: #ffffff
+			.adminlinks
+				.actions
+					display: flex 
+					align-items: center
+					.user 
+						a
+							color: #ffffff
+						padding-right: .5rem !important
+						+ .user 
+							border-left: 1px solid #fefefe
+							padding-left: .5rem
+						margin: 0 
+						padding: 0
+	.querybox 
+		padding-top: .5rem 
+		padding-bottom: .5rem
+		border: .5px solid #efefef
+		form 
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.input-group 
+				input
+					&:focus 
+						box-shadow: none
+						outline: none
+				+media-breakpoint-up(lg)
+					width: 70%
+					margin: auto
+		.savealert 
+			text-align: center
+	#product-facet
+		.facet
+			#collapse_category
+				.facet-list 
+					li 
+						display: flex
+						form
+							margin-left: 1rem 
+	.search-options 
+		padding: 2rem 0
+		a 
+			text-decoration: none
+		.search
+			.searchgroup
+				padding: 1rem 0
+				border-bottom: 1px solid #cccccc
+				.cattitle 
+					margin-bottom: 1rem
+					padding-bottom: 1rem 
+					border-bottom: 1px solid #cccccc
+					a 
+						text-decoration: none
+						text-transform: uppercase
+						text-align: left
+						font-size: 24px
+						color: #333333
+				.maincats, .maincats-2
+					li 
+						a 
+							line-height: 20px
+							font-size: 16px
+							color: #333
+							margin-left: .3rem
+						+ li 
+							margin-top: .3rem
+						&.morecats
+							.linklike 
+								margin-left: 0
+								text-decoration: none
+								display: flex 
+								justify-content: space-between
+								align-items: center
+								i 
+									transition: .5s all ease-in-out
+								&.active 
+									i 
+										transform: rotate(135deg)
+				.maincats
+					-webkit-column-count: 2
+					column-count: 2
+					+media-breakpoint-up(md)
+						-webkit-column-count: 3
+						column-count: 3
+					+media-breakpoint-up(lg)
+						-webkit-column-count: 2
+						column-count: 2
+				.maincats-2 
+					margin-top: 1rem
+				.othercats 
+					display: none
+					padding: 1rem 0
+					border-bottom: 1px solid #cccccc
+					+media-breakpoint-up(sm)
+						-webkit-column-count: 2
+						column-count: 2
+					+media-breakpoint-up(md)
+						-webkit-column-count: 3
+						column-count: 3
+					+media-breakpoint-up(lg)
+						-webkit-column-count: 2
+						column-count: 2
+			.main 
+				+media-breakpoint-up(sm)
+					-webkit-column-count: 2
+					column-count: 2
+				+media-breakpoint-up(lg)
+					-webkit-column-count: 1
+					column-count: 1
+			.buttongroup
+				padding: 1rem 0
+				border-bottom: 1px solid #cccccc
+				display: flex
+				.button
+					+ .button 
+						a 
+							border: 1px solid #cccccc
+						+ .button 
+							a 
+								border-left: none
+					a 
+						padding: .3rem 1rem 
+						background: 
+						border: 1px solid #cccccc
+						border-right: none
+			.check-box 
+				li 
+					+ li 
+						margin-top: .3rem
+			.searchgroup-main  
+				+ .searchgroup-main  
+					margin-top: .3rem
+	.project
+		display: flex
+		.list-items
+			width: 100%
+			.category
+				.category-nav
+					background: #efefef
+					display: flex
+					width: 100%
+					justify-content: space-between
+					position: relative
+					padding: .3rem
+					select
+						background: none
+						border: 0
+						+pad(1rem .75rem)
+						&:focus 
+							outline: none
+					.list-style
+						display: flex
+						align-items: center
+						.nav-item
+							cursor: pointer
+							+pad(.5rem)
+							img
+								filter: invert(74%) sepia(12%) saturate(0%) hue-rotate(170deg) brightness(93%) contrast(86%)
+							&.active
+								img
+									filter: initial
+						.showmap
+							margin-left: 1.5rem
+							em
+								color: #8c8c8c
+				.project-nav
+					display: flex
+					justify-content: space-between
+					align-items: center
+					border-top: 1px solid lighten(color-get($mau,text-2),30%)
+					color: color-get($mau, text-3)
+					+pad(0 .8rem)
+					p
+						margin-bottom: 0
+					.project-number
+						p
+							span
+								color: color-get($mau,main)
+					.sort
+						align-items: center
+						p
+							color: color-get($mau,text-2)
+						.select
+							margin-left: 1rem
+							min-width: 110px
+							select
+								background: none
+								border: 0
+								+pad(1rem .75rem)
+			
+			.project-list
+				padding-right: 0
+				position: relative
+				margin-top: 1rem
+				+mar(null)
+				+media-breakpoint-up(lg)
+					margin-top: 1.5rem
+					+mar(null -5px)
+				&::-webkit-scrollbar
+					width: 3px
+					background-color: transparent
+					
+				&::-webkit-scrollbar-thumb
+					border-radius: 0
+					-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1)
+					background-color: color-get($mau,main)
+					z-index: 20
+				.project-style
+					.nav
+						justify-content: center
+						+mar(null auto)
+						min-width: 250px
+						background: color-get($mau,trang)
+						+bor-rad(5px)
+						+pos(abs, 2rem null null 50%)
+						z-index: 20
+						transform: translateX(-50%)
+						.nav-item
+							position: relative
+							.nav-link
+								display: flex 
+								align-items: center
+								+pad(.3rem 2rem)
+								color:  #8c8c8c
+							+ .nav-item
+								&:after
+									content: ''
+									height: 12px
+									width: 1px
+									background: lighten(color-get($mau,text-2),30%)
+									+pos(abs, 50% null null 0)
+									transform: translateY(-50%)
+				.col-mod
+					+media-breakpoint-up(lg)
+						-webkit-box-flex: 0
+						-webkit-flex: 0 0 25%
+						-ms-flex: 0 0 25%
+						flex: 0 0 25%
+						max-width: 25%
+						padding-right: 5px
+						padding-left: 5px
+				.item
+					text-decoration: none
+					figure
+						overflow: hidden
+						position: relative
+						transition: .5s all ease-in-out
+						margin-bottom: 10px
+						.img
+							position: relative
+							&:after
+								content: ''
+								width: 100%
+								height: 100%
+								background: color-rgba(color-get($mau, main),.7)
+								+pos(abs, null null 100% 0)
+								z-index: 1
+							img 
+								width: 100%
+								max-width: 100%
+							.detail
+								display: none
+								text-align: center
+								+pad(.5rem 1rem)
+								background: color-get($mau,extra)
+								color: color-get($mau,trang)
+								+pos(abs, 50% null null 50%)
+								transform: translate(-50%, -50%)
+						.mflex-content
+							display: none
+						figcaption
+							padding: 1rem
+							background: #efefef
+							width: 100%
+							h5 
+								color: #333333
+								font-size: 20px
+								font-weight: 600
+							.project-name
+								+fz(1rem)
+							.project-info
+								+fz(.9rem)
+								.sale 
+									margin-top: .3rem
+									display: flex
+									align-items: center
+									span 
+										color: #cccccc
+										white-space: pre
+										i
+											+ i
+												margin-left: .3rem
+											&.active 
+												color: #FCD832
+									h6 
+										white-space: pre
+										margin-left: .5rem
+										color: #cccccc
+										font-size: 12px
+								h3 
+									line-height: 20px
+									color: #333333
+									font-size: 14px
+									font-weight: 400
+								p
+									margin-top: 1rem
+									margin-bottom: 0
+									color: #333333
+									font-size: 13px
+						.info
+							display: none
+							+pad(1rem)
+							background: #efefef
+							.info-detail
+								.sale 
+									margin-top: 1rem
+									display: flex
+									align-items: center
+									span 
+										color: #cccccc
+										white-space: pre
+										i
+											+ i
+												margin-left: .3rem
+											&.active 
+												color: #FCD832
+									h6 
+										white-space: pre
+										margin-left: .5rem
+										color: #cccccc
+										font-size: 12px
+								.name
+									color: #333333
+									+fz(1.2rem)
+									+fw(700)
+									text-transform: uppercase
+								.nav
+									flex-direction: column
+									color: #333333
+							.info-price
+								text-align: right
+								.item
+									p
+										color: #333333
+										margin-bottom: 0
+									+ .item
+										margin-top: 1rem
+									b
+										color: #333333
+										+fz(1.05rem)
+										&.price
+											color: #333333
+						&:hover
+							box-shadow: 0px 0px 30px 0px rgba(0,0,0,.5)
+							.img
+								&:after
+									transition: .3s all ease-in-out
+									bottom: 0
+								.detail
+									z-index: 10
+									display: block
+				// 					transition: .3s all ease-in-out
+				&.active
+					.item
+						figure
+							display: flex
+							figcaption
+								display: none
+							.info
+								display: flex
+			&.mflex
+				.project-list
+					margin-top: 0!important
+					.box
+						+pad(1.5rem null)
+						border-bottom: 1px solid lighten(color-get($mau,text-2),30%)
+						&:first-child
+							padding-top: 0
+						.item
+							figure
+								display: flex
+								margin-bottom: 0
+								figcaption
+									display: none
+								.img
+									width: 40%
+									img
+										display: none
+								.mflex-content
+									display: block
+									margin-left: 1rem
+									background: #fefefe
+									.name
+										+fz(1.2rem)
+										+fw(700)
+										text-transform: uppercase
+										color: color-get($mau,text-1)
+										margin-bottom: 0
+									.address
+										color: color-get($mau,text-2)
+										margin-bottom: .7rem
+									.nav
+										.nav-item
+											+ .nav-item
+												margin-left: 2rem
+												position: relative
+												span
+													+fw(700)
+												&:after
+													content: ''
+													width: 1px
+													height: 12px
+													background: lighten(color-get($mau,text-2),30%)
+													+pos(abs, 50% null null -1rem)
+													transform: translateY(-50%)
+									.price
+										color: color-get($mau,main)
+										margin-top: 1rem
+										font-size: 1.1rem
+										font-weight: 700
+	.map
+		display: none
+		width: 40%
+		position: relative
+		.hidemap
+			+pos(abs, 0 null null 0)
+
+	.showmap, .hidemap
+		display: flex
+		align-items: center
+		height: 43.59px
+		color: color-get($mau,text-1)
+		cursor: pointer
+		padding: 0 .5rem 
+		background: #efefef
+		em
+			+fz(1.2rem)
+			color: #8c8c8c
+	.map-mobile, .filter-mobile
+		position: fixed
+		top: 0
+		display: none
+		width: 100%
+		height: 100vh
+		z-index: 9991
+		.map-title, .filter-title
+			border-bottom: 1px solid lighten(color-get($mau,text-2),30%)
+			+pad(.5rem 1rem)
+			text-align: center
+			position: relative
+			background: color-get($mau,trang)
+			p
+				+fz(1.3rem)
+				color: color-get($mau,main)
+			.close
+				+pos(abs, 50% null null 1rem)
+				+fz(1.5rem)
+				transform: translateY(-50%)
+footer 
+	padding: 1rem 0
+	background: #efefef
+	.clfooter 
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		flex-direction: column
+		+media-breakpoint-up(sm)
+			flex-direction: row
+		li 
+			font-size: 15px
+			+ li 
+				margin-top: 1rem
+				+media-breakpoint-up(sm)
+					margin-top: 0
+					margin-left: 1rem
+				a 
+					text-decoration: none 
+					color: #404040
+					font-size: 15px
+					+media-breakpoint-up(sm)
+						font-size: small
+						color: #005eab
+				sup 
+					font-size: .6rem 
+.count
+	font-size: 13px !important

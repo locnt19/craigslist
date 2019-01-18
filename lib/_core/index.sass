@@ -70,7 +70,7 @@
     background-image: url(../image/sprite-32px.png)
     background-size: 16px
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
   padding: 0
   border: 0
@@ -101,7 +101,7 @@ table
 pre
   font-family: monospace
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section
   display: block
 
 template
@@ -309,38 +309,6 @@ section.body
 .post.mobile section.body
   min-height: inherit
   padding-bottom: 1em
-
-.buttongroup
-  background-color: #FFF
-  height: 1.3em
-  line-height: 1.3em
-  border: 1px solid #e0e0e0
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  border-radius: 5px
-  display: -moz-inline-stack
-  display: inline-block
-  *display: inline
-  *zoom: 1
-  overflow: hidden
-  .button
-    display: -moz-inline-stack
-    display: inline-block
-    *display: inline
-    *zoom: 1
-    border-left: 1px solid #e0e0e0
-    padding: 0 7px
-    height: 100%
-    &.sel
-      color: #FFF
-      background-color: #5252ff
-      cursor: text
-      &:hover
-        text-decoration: none
-    &:first-child, &.first
-      border-left: 0
-  a:visited
-    color: #00E
 
 .toggle-arrow
   border-left: 5px solid transparent
@@ -634,8 +602,6 @@ h2.vote-banner.mobile
 .search .global-header
   position: static
 
-.mobile footer
-  padding: 5px 0
 
 .js .homepage
   #catAbb, #go
@@ -910,69 +876,6 @@ table.four_pane_search
     display: none
   .breadcrumbs-container .breadcrumbs .crumb
     float: left
-
-footer
-  background: #eee
-  border-top: 1px solid #ccc
-  bottom: 0
-  left: 0
-  line-height: 1.5em
-  min-height: 1.1em
-  padding: .3em 4em .3em 0
-  position: absolute
-  right: 0
-  text-align: center
-
-.desktop footer
-  z-index: 1001
-  bottom: 0
-
-.mobile footer
-  padding-right: 5px
-
-footer
-  .clfooter li
-    display: inline
-    padding: 0 4px
-    font-size: small
-    a
-      text-decoration: none
-  .rss
-    position: absolute
-    right: 4px
-    bottom: 4px
-    .l
-      background: orange
-      padding: 0 2px
-      color: white
-      font-weight: bold
-      text-decoration: none
-  .clfooter .mobile
-    display: none
-
-.mobile footer .clfooter
-  .desktop
-    display: none
-  .mobile
-    display: inline
-
-footer .clfooter .rss
-  float: right
-  text-align: right
-  .l
-    background: orange
-    padding: 0 2px
-    color: white
-    font-weight: bold
-
-.mobile footer .rss
-  display: none
-
-.simple
-  footer
-    display: none
-  &.footer footer
-    display: block
 
 .paginator
   display: -moz-inline-stack

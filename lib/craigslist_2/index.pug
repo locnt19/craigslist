@@ -1,0 +1,433 @@
+section.craigslist_2
+	.container-fluid 
+		.row.global
+			.col 
+				.header-global
+					.list
+						a.header-logo(name='logoLink', href='/?lang=vi') CL
+						//- .breadcrumbs-container
+						//- 	form#breadcrumbform.breadcrumbs-form(method='get', action='/search/sss')
+						//- 		input(type='hidden', name='sort', value='priceasc')
+						//- 		ul.breadcrumbs
+						//- 			li.crumb
+						//- 				span.no-js
+						//- 					a(href='/?lang=vi') khu vịnh SF
+						//- 				select#areaAbb.js-only
+						//- 					option(value='bakersfield') bakersfield
+						//- 					option(value='chico') chico
+						//- 					option(value='fresno') fresno
+						//- 				i.fas.fa-chevron-right
+						//- 			li.crumb
+						//- 				select#catAbb
+						//- 					option(value='sss', selected='') cần bán
+						//- 					option(value='ccc') cộng đồng
+						//- 					option(value='bbb') dịch vụ
+						//- 					option(value='rrr') hồ sơ
+						//- 					option(value='hhh') nhà đất
+						//- 				i.fas.fa-chevron-right
+						//- 			li.crumb
+						//- 				select#subcatAbb.js-only
+						//- 					option(value='sss') t.cả
+						//- 					option(value='wta') bánh & vỏ xe ô tô
+						//- 					option(value='cba') bộ sưu tập
+						//- 					option(value='ema') cd/dvd/vh
+						//- 					option(value='waa') cần
+						//- 					option(value='tla') d.cụ
+						//- 					option(value='moa') di động
+						//- 					option(value='vga') game video
+						//- 				span.no-js for sale
+						//- 			li.crumb.no-js
+						//- 				input(type='submit', value='đi')
+					.adminlinks
+						ul.actions
+							li.user
+								a(href='#') đăng nhập
+							li.user
+								a(href='#') tài khoản
+						ul.user-favs-discards
+							li.user
+								.favorites.off
+									a.favlink(href='#')
+										span.icon.icon-star.fav(aria-hidden='true')
+										span.fav-number 0
+										span.fav-label  mục y.thích
+							li.user.discards
+								form.unfavform.js-only(method='POST', action='/favorites?lang=vi')
+									.to-banish-page
+										input.lastLink(type='hidden', name='lastLink', value='//sfbay.craigslist.org/search/sss?s=120&sort=priceasc&lang=vi')
+										input.lastTitle(type='hidden', name='lastTitle', value='khu vịnh SF cần bán  - craigslist')
+										input.unfaves(type='hidden', name='fl', value='djg4amw0a2Y6Njc5NDQyNzg3MA==')
+										input(type='hidden', name='uf', value='1')
+										a.to-banish-page-link(href='#')
+											span.icon.icon-trash.red(aria-hidden='true')
+											span.banished_count 1
+											span.discards-label  ẩn
+		.row.querybox
+			.col 
+				form
+					.input-group
+						input.form-control(type='text', placeholder='tìm kiếm cần bán', name='query', value='', autocorrect='off', autocapitalize='off', autocomplete='off', data-autocomplete='search')
+						.input-group-append 
+							a.input-group-text(href="#") 
+								i.fas.fa-search
+					.savealert
+						a.saveme(data-action='save', href='#', title='lưu tìm kiếm này') lưu tìm kiếm
+		.row.search-options 
+			.col-lg-3
+				.search
+					.searchgroup.categories
+						.cattitle
+							a.reset(href='#') cần bán
+						ul.maincats
+							li
+								input.catcheck.multi_checkbox(type='checkbox', value='145,146')
+								a.category(href='#') ô tô&xe tải
+								span.count (50)
+							li
+								input.catcheck.multi_checkbox(type='checkbox', value='141,142')
+								a.category(href='#') nội thất
+								span.count (50)
+							li
+								input.catcheck.multi_checkbox(type='checkbox', value='5,179')
+								a.category(href='#') tổng hợp bán
+								span.count (50)
+							li
+								input.catcheck.multi_checkbox(type='checkbox', value='96,167')
+								a.category(href='#') điện tử
+								span.count (50)
+							li
+								input.catcheck.multi_checkbox(type='checkbox', value='122,163')
+								a.category(href='#') p.tùng ôtô
+								span.count (50)
+						ul.maincats-2
+							li.morecats
+								a(href="javascript:void(0)").linklike
+									span hiện thêm 40
+									i.fas.fa-plus
+								ul.othercats
+									li
+										input#cat_hsa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đồ gia dụng
+										span.count (50)
+									li
+										input#cat_cla.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') quần áo & phụ kiện
+										span.count (50)
+									li
+										input#cat_sga.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đồ thể thao
+										span.count (50)
+									li
+										input#cat_baa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đồ trẻ em
+										span.count (50)
+									li
+										input#cat_cba.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') bộ sưu tập
+										span.count (50)
+									li
+										input#cat_wta.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') bánh & vỏ xe ô tô
+										span.count (50)
+									li
+										input#cat_ppa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') thiết bị
+										span.count (50)
+									li
+										input#cat_tla.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') d.cụ
+										span.count (50)
+									li
+										input#cat_msa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') các nhạc cụ
+										span.count (50)
+									li
+										input#cat_bia.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') xe đạp
+										span.count (50)
+									li
+										input#cat_ata.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đồ cổ
+										span.count (50)
+									li
+										input#cat_mca.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') xe máy/tay ga
+										span.count (50)
+									li
+										input#cat_sya.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') máy tính
+										span.count (50)
+									li
+										input#cat_taa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đchơi & game
+										span.count (50)
+									li
+										input#cat_ara.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') t.công & m.nghệ
+										span.count (50)
+									li
+										input#cat_gra.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') trại & vườn
+										span.count (50)
+									li
+										input#cat_syp.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') phụ tùng máy tính
+										span.count (50)
+									li
+										input#cat_mpa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') phụ tùng & phụ kiện xe máy
+										span.count (50)
+									li
+										input#cat_pha.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') photo/video
+										span.count (50)
+									li
+										input#cat_bfa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') k.doanh
+										span.count (50)
+									li
+										input#cat_bip.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') phụ tùng xe đạp
+										span.count (50)
+									li
+										input#cat_moa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') di động
+										span.count (50)
+									li
+										input#cat_bka.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') sách & tạp chí
+										span.count (50)
+									li
+										input#cat_haa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') s.khỏe và làm đẹp
+										span.count (50)
+									li
+										input#cat_maa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') vật liệu
+										span.count (50)
+									li
+										input#cat_jwa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') tr.sức
+										span.count (50)
+									li
+										input#cat_hva.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') thiết bị nặng
+										span.count (50)
+									li
+										input#cat_tia.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') vé
+										span.count (50)
+									li
+										input#cat_tra.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') xe moóc
+										span.count (50)
+									li
+										input#cat_vga.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') game video
+										span.count (50)
+									li
+										input#cat_rva.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') xe dã ngoại
+										span.count (50)
+									li
+										input#cat_ema.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') cd / dvd / vh
+										span.count (50)
+									li
+										input#cat_boo.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') thuyền
+										span.count (50)
+									li
+										input#cat_waa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') cần
+										span.count (50)
+									li
+										input#cat_bpa.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') linh kiện & phụ tùng tàu thuyền
+										span.count (50)
+									li
+										input#cat_sna.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') atv, utv, xe tr.tuyết
+										span.count (50)
+									li
+										input#cat_bar.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') tr.đổi
+										span.count (50)
+									li
+										input#cat_gms.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') thanh lý
+										span.count (50)
+									li
+										input#cat_ava.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') hàng không
+										span.count (81)
+									li
+										input#cat_zip.catcheck.multi_checkbox(type='checkbox', value='96,167')
+										a.category(href='#') đồ m.phí
+										span.count (39)
+					
+					ul.searchgroup.buttongroup
+						li.button
+							a(href='#', data-val='all') t.cả
+						li.button
+							a(href='#', data-val='owner')  c.chủ
+						li.button
+							a(href='#', data-val='dealer') đại lý
+					.searchgroup.check-box 
+						ul
+							li
+								label.hasPic
+									input.autosubmit(type='checkbox', name='hasPic', value='1')
+									|            có ảnh
+							li
+								label.postedToday
+									input.autosubmit(type='checkbox', name='postedToday', value='1')
+									|            đã đăng h.nay
+							li
+								label.bundleDuplicates
+									input.autosubmit(type='checkbox', name='bundleDuplicates', value='1')
+									|            nhóm các mục trùng lặp
+							li
+								label.searchNearby
+									input(type='checkbox', name='searchNearby', value='1')
+									|            gồm những khu vực lân cận
+					.searchgroup.main 
+						.searchgroup-main 
+							span.searchfieldlabel dặm từ zip
+							input.flatinput.searchInput.search_distance(type='number', max='200', min='0', size='3', inputmode='numeric', placeholder='dặm', name='search_distance', value='')
+							input.flatinput.searchInput.postal(type='text', placeholder='từ mã ZIP', size='7', name='postal', value='')
+							span.icon.icon-locate
+						.searchgroup-main
+							span.searchfieldlabel giá
+							input.flatinput.min(type='tel', name='min_price', placeholder='t.t', title='s.nguyên, không chứa chữ cái hoặc k.hiệu', value='')
+						.searchgroup-main
+							span.searchfieldlabel kiểu và đời
+							input.flatinput.auto_make_model.ui-autocomplete-input(type='text', placeholder='nhiệu / kiểu', name='auto_make_model', value='', data-autocomplete='makemodel', autocomplete='off')
+						.searchgroup-main
+							.minmax.auto_year
+								span.searchfieldlabel năm ra kiểu
+								input.flatinput.min(type='tel', name='min_auto_year', placeholder='t.t', title='s.nguyên, không chứa chữ cái hoặc k.hiệu', value='')
+						.searchgroup-main
+							.minmax.auto_miles
+								span.searchfieldlabel h.trình kế
+								input.flatinput.min(type='tel', name='min_auto_miles', placeholder='t.t', title='s.nguyên, không chứa chữ cái hoặc k.hiệu', value='')
+			.col-lg-9
+				.project
+					.list-items
+						//- thêm class mflex hoặc không
+						.row.no-gutters
+							.col
+								.category.d-none.d-lg-block
+									.category-nav
+										select#areaAbb.js-only
+											option(value='sfbay') khu vịnh SF
+											option(value='bakersfield') bakersfield
+											option(value='chico') chico
+											option(value='fresno') fresno
+										.list-style
+											ul.nav
+												li.nav-item.list-1
+													img.img-fluid(src="./img/Project/project_icon_1.png", alt="")
+												li.nav-item.active.list-2
+													img.img-fluid(src="./img/Project/project_icon_2.png", alt="")
+											.showmap
+												em.lnr.lnr-chevron-left
+						.row.project-list.no-gutters
+							.project-style.d-lg-none
+								ul.nav
+									li.nav-item
+										a.nav-link.mmap(href="javascript:void(0)")
+											img(src="./img/project/project_map.png", alt="")
+											span.ml-2 Bản đồ
+							- for(i=0; i<30; i ++)
+								.col-mod.col-12.box
+									a(href="#").item
+										figure
+											.img(bg-img='./img/project/house-6.jpg')
+												img.d-none-d-xl-block(src="./img/project/house-6.jpg", alt="")
+												.detail Xem chi tiết
+											figcaption
+												h5.project-name 50.000$
+												.project-info
+													h3 BEAUTIFUL EL SOBRANTE HILLS EXECUTIVE HOME
+													.sale
+														span.active 
+															i.active.fa.fa-star
+															i.active.fa.fa-star
+															i.active.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+														h6 12 nhận xét
+													p Đã hoàn thành / Đang bán
+											.mflex-content.d-lg-none
+												h5.name Sunwah Pearl
+												p.address Quận 10, TP. HCM
+												.detail
+													ul.nav
+														li.nav-item Căn hộ
+														li.nav-item Đã hoàn thành
+													ul.nav
+														li.nav-item
+															span Sunwah Group
+														li.nav-item Đang bán
+													.price.text-right
+														p.mb-0 Từ 1.5 tỷ VNĐ / căn
+											.info.justify-content-xl-between.w-100
+												.info-detail
+													h5.name Sunwah Pearl
+													ul.nav
+														li.nav-item Quận 10, TP. HCM
+														li.nav-item Loại dự án: Căn hộ
+														li.nav-item Số căn:  1.500 căn
+														li.nav-item Diện tích: 50m2 - 150m2
+														li.nav-item Hoàn thành:  Đã hoàn thành
+													.sale
+														span.active 
+															i.active.fa.fa-star
+															i.active.fa.fa-star
+															i.active.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+														h6 12 nhận xét
+												.info-price
+													.item
+														p Chủ đầu tư
+														b Sunwah Group
+													.item
+														p Đang bán
+														b.price Từ 1.5 tỷ VNĐ / căn
+					.map
+						iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.64296934296!2d106.704975!3d10.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4123a38e10c2885!2zUFZPSUwgVOG7lE5HIEPDlE5HIFRZIEThuqZVIFZJ4buGVCBOQU0!5e0!3m2!1svi!2sus!4v1536653990846" width="100%" height="700" frameborder="0" style="border:0;")
+						.hidemap
+							em.lnr.lnr-chevron-right
+			.map-mobile
+				.map-title
+					p.mb-0 Bản đồ
+					.close
+						em.lnr.lnr-cross
+				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.64296934296!2d106.704975!3d10.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4123a38e10c2885!2zUFZPSUwgVOG7lE5HIEPDlE5HIFRZIEThuqZVIFZJ4buGVCBOQU0!5e0!3m2!1svi!2sus!4v1536653990846" width="100%" height="100%" frameborder="0" style="border:0;")
+footer
+	.container-fluid
+		.row 
+			.col 
+				ul.clfooter
+					li
+						| ©  
+						span.desktop craigslist
+						span.mobile CL
+					li
+						a(href='#') giúp
+					li
+						a(href='#') a.toàn
+					li.desktop
+						a(href='#') q.r. tư
+					li.desktop
+						a(href='#') phản hồi
+					li.desktop
+						a(href='#') vlàm cl
+					li
+						a(href='#') k.hạn
+						sup.neu new
+					li
+						a(href='#') gthiệu
+

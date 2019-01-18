@@ -12,6 +12,14 @@
 			"footer": [
                 "footer"
             ]
+        },
+        "craigslist_2": {
+            "body": [
+                "craigslist_2"
+			],
+			"footer": [
+                "footer"
+            ]
         }
     }
 }
