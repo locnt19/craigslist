@@ -1,0 +1,93 @@
+@import ../../_includes
+
+.details
+	.breadcrumb
+		margin: 0
+		background: #fff
+		.item
+			margin: 0
+			margin-right: .5rem
+			color: blue
+			font-size: r(12px)
+			&:after
+				content: '\203A'
+				display: inline-block
+				margin-left: .5rem
+			&:last-child
+				margin: 0
+				&:after
+					content: none
+	.maincontent
+		.left
+			width: 100%
+			.title
+				font-size: 1.75rem
+				font-weight: 400
+				margin-bottom: 10px
+			.stars
+				display: inline-block
+				i
+					font-size: 1.2rem
+					color: #f4f4f4
+					&:hover,
+					&.voted
+						color: #ffcc00
+			.numbrate
+				color: blue
+				margin-left: .5rem
+				display: inline-flex
+				position: relative
+				.more
+					width: 200px
+					box-sizing: border-box
+					padding: .75rem
+					border: 1px solid #f4f4f4
+					// position: absolute
+					&:before
+						content: ''
+						width: 20px
+						height: 20px
+						position: absolute
+						background: #ffffff
+						border: 1px solid #f4f4f4
+						top: 0
+						left: 50%
+						transform: rotate(45deg)
+					.item
+						display: flex
+						align-items: center
+						p
+							margin: 0
+							margin-right: .25rem
+							&:last-child
+								margin-right: 0
+						.progress
+							width: 100%
+							height: .7rem
+							margin: 0 .5rem
+							background: #f4f4f4
+							border-radius: .35rem
+							.progress-bar
+								background: blue
+								border-radius: .35rem
+			.gallery
+				margin: 2rem 0
+				.gallery-top
+					width: 100%
+					border: 5px solid red
+					.swiper-slide
+						img
+							width: 100%
+				.gallery-thumbs
+					width: 100%
+					box-sizing: border-box
+					padding: 10px 0
+					.swiper-slide
+						border: 1px solid #ccc
+						img
+							width: 100px
+							height: 100px
+							text-align: center
+							opacity: 0.5
+					.swiper-slide-thumb-active
+						opacity: 1

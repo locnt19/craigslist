@@ -1,25 +1,30 @@
 {
-    "SETUP": {
-        "index": {
-            "body": [
-                "home"
-            ]
-        },
-        "craigslist": {
-            "body": [
-                "craigslist"
+	"SETUP": {
+		"index": {
+			"body": [
+				"home"
+			]
+		},
+		"details": {
+			"body": [
+				"details"
+			]
+		},
+		"craigslist": {
+			"body": [
+				"craigslist"
 			],
 			"footer": [
-                "footer"
-            ]
-        },
-        "craigslist_2": {
-            "body": [
-                "craigslist_2"
+				"footer"
+			]
+		},
+		"craigslist_2": {
+			"body": [
+				"craigslist_2"
 			],
 			"footer": [
-                "footer"
-            ]
-        }
-    }
+				"footer"
+			]
+		}
+	}
 }
