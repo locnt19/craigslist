@@ -1,16 +1,18 @@
 section.details
 	nav.breadcrumb
-		.container-fluid
+		.container
 			a.item(href='#') Trang chủ
 			a.item(href='#') Cần bán
 			a.item(href='#') Ô tô
 			a.item(href='#') Cafe Racer
 	.maincontent
-		.container-fluid
+		.container
 			.row
-				.col-lg-6
-					.left
-						h1.title Moto racer Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ab.
+				.col-lg-12
+					.center
+						.title Moto racer Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ab.
+						.price
+							| 19.000.000 đ
 						.rate
 							.stars
 								i.mdi.mdi-star.voted
@@ -18,9 +20,8 @@ section.details
 								i.mdi.mdi-star.voted
 								i.mdi.mdi-star
 								i.mdi.mdi-star
-							.numbrate
-								| 3.1 (3)
-								.more
+							.numbrate 3.1 (15)
+								.more.d-none
 									.item
 										p 5
 										.stars
@@ -56,6 +57,11 @@ section.details
 										.progress
 											.progress-bar.w-50
 										p 3
+						.time
+							| Đăng từ 
+							span 1 giờ trước
+				.col-lg-6
+					.left
 						.gallery
 							.swiper-container.gallery-top
 								.swiper-wrapper
@@ -70,8 +76,11 @@ section.details
 									.swiper-slide
 										img(src='img/product-details/moto_5.jpg')
 								//- Add Arrows
-								.swiper-button-next.swiper-button-white
-								.swiper-button-prev.swiper-button-white
+								.arrows
+									.button-next
+										i.mdi.mdi-chevron-right
+									.button-prev
+										i.mdi.mdi-chevron-left
 							.swiper-container.gallery-thumbs
 								.swiper-wrapper
 									.swiper-slide
@@ -84,5 +93,47 @@ section.details
 										img(src='img/product-details/moto_4.jpg')
 									.swiper-slide
 										img(src='img/product-details/moto_5.jpg')
+						hr
+						.derc
+							.title Thông tin chi tiết
+							| Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis reprehenderit, quia deleniti aperiam cupiditate in quisquam perferendis at voluptatibus veniam ipsa! Facere laudantium similique non commodi repellat vitae veniam quia itaque numquam hic sint nemo, consequatur praesentium est totam. Iusto sint odit accusamus ipsa recusandae tempora porro voluptatem. Quod, soluta tempora. Ex tempore ut quod id et totam molestiae dignissimos ab temporibus quam. Laborum consequatur, soluta odio facere delectus saepe inventore. Maiores ipsa quam cupiditate quibusdam quisquam necessitatibus, provident illum labore molestias vel aperiam debitis nisi iste, sapiente amet! Enim autem reprehenderit expedita quasi itaque necessitatibus, quas eos? Aspernatur, deleniti.
 				.col-lg-6
 					.right
+						.row
+							.contact
+								#map
+								button.replynow liên hệ ngay
+								.phone 0383.303.809
+							.info
+								.row
+									.label 
+										span.key name:
+										span.value  2015 INFINITI QX60
+								.row
+									.label
+										span.key VIN:
+										span.value  5N1AL0MN1FC501824
+								.row
+									.label
+										span.key cylinders:
+										span.value  6 cylinder
+								.row
+									.label
+										span.key drive:
+										span.value  fw
+								.row
+									.label
+										span.key fuel: 
+										span.value  gas
+								.row
+									.label
+										span.key odometer: 
+										span.value  3495
+								.row
+									.label
+										span.key transmission:
+										span.value  automati
+								.row
+									.label
+										span.key type:
+										span.value  SU
