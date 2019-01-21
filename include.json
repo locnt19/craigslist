@@ -43,6 +43,17 @@
 			"footer": [
 				"footer"
 			]
+		},
+		"help": {
+			"header": [
+				"header"
+			],
+			"body": [
+				"help"
+			],
+			"footer": [
+				"footer"
+			]
 		}
 	}
 }

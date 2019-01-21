@@ -1,0 +1,70 @@
+@import ../../_includes
+
+.help
+	.center
+		a 
+			text-decoration: none
+		.title
+			background: #f4f4f4
+			border-top: 0
+			margin-bottom: 0
+			font-weight: bold
+			text-align: center
+			padding: .5rem
+			a
+				color: #333333
+		.nav
+			display: block
+			column-fill: balance
+			font-size: r(15px)
+			li
+				+ li
+					border-top: 1px solid #f4f4f4
+				padding: .3rem 0 .3rem 1rem
+				a
+					color: #a7a7a7
+				+media-breakpoint-up(lg)
+					&:hover
+						a 
+							color: #ffffff
+						background: #0072a87a
+		.community,
+		.services,
+		.forums,
+		.housing,
+		.forsale,
+		.jobs,
+		.gigs,
+		.resumes
+			border: 1px solid #f4f4f4
+			margin-bottom: 15px
+		.forums
+			.nav
+				columns: auto 3
+		.housing,
+		.jobs
+			.nav
+				columns: auto
+	.rightbar
+		width: 100%
+		text-align: center
+		margin-bottom: 1rem
+		background: #f4f4f4
+		font-size: r(11.5px)
+		border: 1px #ccc solid
+		.langlinks
+			margin: .7rem 0
+			select
+				display: block
+				margin: 0 auto .2rem
+		.title
+			color: blue
+			margin: 0 .3rem
+			cursor: pointer
+			transition: 0.4s
+			padding: .2rem 0
+			font-weight: bold
+			border-top: 1px solid #ccc
+			border-bottom: 1px solid #ccc
+			&.active, &:hover
+				background: #ffffff

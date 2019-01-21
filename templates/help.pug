@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "help"
+	- var description = "Description for help page"
+	- var bodyclass = "help"
+	- var href = "/help.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/help/index.pug
+block footer
+	include ../lib/footer/index.pug
