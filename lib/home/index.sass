@@ -170,8 +170,11 @@
 		font-size: r(11.5px)
 		text-align: center
 		width: 100%
-		.nav
-			display: block
+		.langlinks
+			margin: .7rem 0
+			select
+				display: block
+				margin: 0 auto .2rem
 		.title
 			color: blue
 			margin: 0 .3rem
@@ -183,11 +186,29 @@
 			border-bottom: 1px solid #ccc
 			&.active, &:hover
 				background: #ffffff
-		.accordion
-			display: none
-			overflow: hidden
-		.langlinks
-			margin: .7rem 0
-			select
-				display: block
-				margin: 0 auto .2rem
+		.menu
+			.tab
+				position: relative
+				width: 100%
+				margin-top: -1px
+				overflow: hidden
+				input
+					position: absolute
+					opacity: 0
+					z-index: -1
+				label
+					position: relative
+					display: block
+					font-weight: bold
+					cursor: pointer
+				.tab-content
+					max-height: 0
+					overflow: hidden
+					-webkit-transition: max-height .5s
+					-o-transition: max-height .5s
+					transition: max-height .5s
+					ul
+						li
+							margin: .5rem
+				input:checked ~ .tab-content
+					max-height: 100vh

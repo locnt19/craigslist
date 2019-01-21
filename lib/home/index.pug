@@ -460,74 +460,98 @@ section.homepage
 							option(value="") 한국말
 						a.langcur(href="") english
 					.menu
-						.title khu vực lân cận
-						ul.accordion
-							li.item
-								a(href="#") bà rịa vũng tàu
-							li.item
-								a(href="#") đồng nai
-							li.item
-								a(href="#") bình dương
-							li.item
-								a(href="#") tiền giang
-							li.item
-								a(href="#") long an
-							li.item
-								a(href="#") bến tre
-							li.item
-								a(href="#") bình phước
-						.title thành phố của việt nam
-						ul.accordion
-							li.item
-								a(href="#") bà rịa vũng tàu
-							li.item
-								a(href="#") đồng nai
-							li.item
-								a(href="#") bình dương
-							li.item
-								a(href="#") tiền giang
-							li.item
-								a(href="#") long an
-							li.item
-								a(href="#") bến tre
-							li.item
-								a(href="#") bình phước
-						.title thành phố trung ương
-						ul.accordion
-							li.item
-								a(href="#") bà rịa vũng tàu
-							li.item
-								a(href="#") đồng nai
-							li.item
-								a(href="#") bình dương
-							li.item
-								a(href="#") tiền giang
-							li.item
-								a(href="#") long an
-							li.item
-								a(href="#") bến tre
-							li.item
-								a(href="#") bình phước
-	//- footer
-	//- 	ul.clfooter
-	//- 		li
-	//- 			| © 
-	//- 			span.desktop craigslist
-	//- 			span.mobile CL
-	//- 		li
-	//- 			a(href="https://www.craigslist.org/about/help/?lang=vi") giúp
-	//- 		li
-	//- 			a(href="https://www.craigslist.org/about/scams?lang=vi") a.toàn
-	//- 		li.desktop
-	//- 			a(href="https://www.craigslist.org/about/privacy.policy?lang=vi") q.r. tư
-	//- 		li.desktop
-	//- 			a(href="https://forums.craigslist.org/?forumID=8&lang=vi") phản hồi
-	//- 		li.desktop
-	//- 			a(href="https://www.craigslist.org/about/craigslist_is_hiring?lang=vi") vlàm cl
-	//- 		li
-	//- 			a(href="//www.craigslist.org/about/terms.of.use.vi") k.hạn
-	//- 			sup.neu new
-	//- 		li
-	//- 			a(href="https://www.craigslist.org/about/?lang=vi") gthiệu
-	//- 		li.fsel.desktop.linklike(data-mode="mobile") mobile
-	//- 		li.fsel.mobile.linklike(data-mode="regular") máy tính
+						.tab
+							input#nearby(type="checkbox" name="tabs")
+							label.title(for="nearby") khu vực lân cận
+							.tab-content
+								ul
+									li
+										a(href="#") bà rịa vũng tàu
+									li
+										a(href="#") đồng nai
+									li
+										a(href="#") bình dương
+									li
+										a(href="#") tiền giang
+									li
+										a(href="#") long an
+									li
+										a(href="#") bến tre
+									li
+										a(href="#") bình phước
+						.tab
+							input#city(type="checkbox" name="tabs")
+							label.title(for="city") thành phố của việt nam
+							.tab-content
+								ul
+									li
+										a(href="#") Bà Rịa
+									li
+										a(href="#") Vũng Tàu
+									li
+										a(href="#") Bạc Liêu
+									li
+										a(href="#") Bảo Lộc
+									li
+										a(href="#") Bắc Giang
+									li
+										a(href="#") Bắc Kạn
+									li
+										a(href="#") Bắc Ninh
+									li
+										a(href="#") Bến Tre
+									li
+										a(href="#") Biên Hòa
+									li
+										a(href="#") Buôn Ma Thuột
+									li
+										a(href="#") Cà Mau
+									li
+										a(href="#") Cam Ranh
+									li
+										a(href="#") Cao Bằng
+									li
+										a(href="#") Cao Lãnh
+									li
+										a(href="#") Cẩm Phả
+									li
+										a(href="#") Châu Đốc
+									li
+										a(href="#") Đà Lạt
+									li
+										a(href="#") Điện Biên Phủ
+									li
+										a(href="#") Đông Hà
+									li
+										a(href="#") Đồng Hới
+									li
+										a(href="#") Hà Giang
+									li
+										a(href="#") Hạ Long
+									li
+										a(href="#") Hà Tĩnh
+									li
+										a(href="#") Hải Dương
+									li
+										a(href="#") Hòa Bình
+									li
+										a(href="#") Hội An
+									li
+										a(href="#") Huế
+									li
+										a(href="#") Hưng Yên
+						.tab
+							input#municipalities(type="checkbox" name="tabs")
+							label.title(for="municipalities") thành phố trực thuộc trung ương
+							.tab-content
+								ul
+									li
+										a(href="#") Hà Nội
+									li
+										a(href="#") Thành Phố Hồ Chí Minh
+									li
+										a(href="#") Cần Thơ
+									li
+										a(href="#") Đà Nẵng
+									li
+										a(href="#") Hải Phòng
