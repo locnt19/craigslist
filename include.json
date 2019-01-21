@@ -47,36 +47,18 @@
 			]
 		},
 		"help": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"help"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"recalls": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"recalls"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"scams": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"scams"
-			],
-			"footer": [
-				"footer"
 			]
 		}
 	}
