@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "terms"
+	- var description = "Description for terms page"
+	- var bodyclass = "terms"
+	- var href = "/terms.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/terms/index.pug
+block footer
+	include ../lib/footer/index.pug
