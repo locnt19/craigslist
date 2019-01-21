@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "recalls"
+	- var description = "Description for recalls page"
+	- var bodyclass = "recalls"
+	- var href = "/recalls.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/recalls/index.pug
+block footer
+	include ../lib/footer/index.pug

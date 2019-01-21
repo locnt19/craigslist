@@ -54,6 +54,17 @@
 			"footer": [
 				"footer"
 			]
+		},
+		"recalls": {
+			"header": [
+				"header"
+			],
+			"body": [
+				"recalls"
+			],
+			"footer": [
+				"footer"
+			]
 		}
 	}
 }
