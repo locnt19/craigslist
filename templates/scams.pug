@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "scams"
+	- var description = "Description for scams page"
+	- var bodyclass = "scams"
+	- var href = "/scams.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/scams/index.pug
+block footer
+	include ../lib/footer/index.pug

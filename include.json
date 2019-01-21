@@ -65,6 +65,17 @@
 			"footer": [
 				"footer"
 			]
+		},
+		"scams": {
+			"header": [
+				"header"
+			],
+			"body": [
+				"scams"
+			],
+			"footer": [
+				"footer"
+			]
 		}
 	}
 }
