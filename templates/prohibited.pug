@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "prohibited"
+	- var description = "Description for prohibited page"
+	- var bodyclass = "prohibited"
+	- var href = "/prohibited.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/prohibited/index.pug
+block footer
+	include ../lib/footer/index.pug

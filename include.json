@@ -12,69 +12,53 @@
 			]
 		},
 		"details": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"details"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"privacy": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"privacy"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"category": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"category"
-			],
-			"footer": [
-				"footer"
+			]
+		},
+		"prohibited": {
+			"body": [
+				"prohibited"
+			]
+		},
+		"safety": {
+			"body": [
+				"safety"
+			]
+		},
+		"terms": {
+			"body": [
+				"terms"
+			]
+		},
+		"about": {
+			"body": [
+				"about"
 			]
 		},
 		"help": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"help"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"recalls": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"recalls"
-			],
-			"footer": [
-				"footer"
 			]
 		},
 		"scams": {
-			"header": [
-				"header"
-			],
 			"body": [
 				"scams"
-			],
-			"footer": [
-				"footer"
 			]
 		}
 	}

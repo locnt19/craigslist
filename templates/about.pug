@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "about"
+	- var description = "Description for about page"
+	- var bodyclass = "about"
+	- var href = "/about.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/about/index.pug
+block footer
+	include ../lib/footer/index.pug
