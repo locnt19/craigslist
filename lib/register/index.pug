@@ -1,0 +1,21 @@
+section.login
+	.container
+		.row
+			.col-md-6.col-lg-4.center
+				.page-content
+					h2 đăng ký thành viên
+					form(action="#" medthod="get").f-register
+						label(for="username") Tên tài khoản
+						input(type="text" id="username")
+						label(for="email") Email
+						input(type="email" id="email")
+						label(for="password") Mật khẩu
+						input(type="password" id="password")
+						label(for="re-password") Nhập lại mật khẩu
+						input(type="password" id="re-password")
+						.terms
+							.custom-checkbox
+								input.checkbox(type="checkbox" id="check")
+								label(for="check")
+							a.text(href="#") Điều khoản sử dụng
+						input.submit(type="submit" value="ĐĂNG KÝ")
