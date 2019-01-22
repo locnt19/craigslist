@@ -53,11 +53,13 @@
 		},
 		"recalls": {
 			"body": [
+				"pagination",
 				"recalls"
 			]
 		},
 		"scams": {
 			"body": [
+				"pagination",
 				"scams"
 			]
 		}
