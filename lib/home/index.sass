@@ -25,11 +25,6 @@
 			li
 				font-weight: 500
 				margin-bottom: .5rem
-			#post
-				color: #fff
-				font-size: 110%
-				padding: .2em .5rem
-				background-color: #BFDDB5
 		.homepage-search
 			margin-bottom: 1rem
 			.querybox
@@ -39,23 +34,12 @@
 			margin-bottom: .5rem
 			font-weight: bold
 			text-align: center
-		.cal
-			margin: 0 auto 2rem
-			text-align: center
-			a
-				text-decoration: none
-			th
-				background: #ccc
-				padding: .2rem .4rem
-			td
-				background: #fff
-				padding: .4rem
-				&:hover
-					background: #f4f4f4
-				&.today
-					background: #BFDDB5
-					a
-						color: #fff
+		.date
+			display: flex
+			justify-content: center
+			margin-bottom: 2rem
+			.datepicker
+				border: 1px solid #ccc
 		.leftlinks
 			margin-bottom: 2rem
 			li
@@ -117,14 +101,6 @@
 				display: inline-block
 				font-size: .7rem
 				text-align: center
-			// &.no-name
-			// 	.radius-info
-			// 		display: inline-block
-			// 		font-size: 1.5em
-			// 		line-height: 1.7em
-			// 		padding: 0 .2em
-			// 	.area
-			// 		display: none
 	.center
 		margin-top: 15px
 		.title

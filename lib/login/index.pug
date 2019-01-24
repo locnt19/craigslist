@@ -1,0 +1,22 @@
+section.login
+	.container
+		.row
+			.col-md-6.col-lg-4.center
+				.page-content
+					h2 đăng nhập
+					form(action="#" medthod="post").f-login
+						label(for="username") Tên tài khoản hoặc Email
+						input(type="text" id="username")
+						label(for="password") Mật khẩu
+						input(type="password" id="password")
+						a(href="#") Quên mật khẩu?
+						input.submit(type="submit" value="ĐĂNG NHẬP")
+					.or
+						hr
+						p hoặc
+						hr
+					.social
+						button.loginBtn.loginBtn--facebook
+							| Facebook
+						button.loginBtn.loginBtn--google
+							| Google
