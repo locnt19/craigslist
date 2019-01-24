@@ -1,15 +1,17 @@
 section.craigslist_2
-	.container-fluid 
-		.row.querybox
-			.col 
-				form
-					.input-group
-						input.form-control(type='text', placeholder='tìm kiếm cần bán', name='query', value='', autocorrect='off', autocapitalize='off', autocomplete='off', data-autocomplete='search')
-						.input-group-append 
-							a.input-group-text(href="#") 
-								i.fas.fa-search
-					.savealert
-						a.saveme(data-action='save', href='#', title='lưu tìm kiếm này') lưu tìm kiếm
+	.querybox
+		.container
+			.row
+				.col 
+					form
+						.input-group
+							input.form-control(type='text', placeholder='tìm kiếm cần bán', name='query', value='', autocorrect='off', autocapitalize='off', autocomplete='off', data-autocomplete='search')
+							.input-group-append 
+								a.input-group-text(href="#") 
+									i.fas.fa-search
+						.savealert
+							a.saveme(data-action='save', href='#', title='lưu tìm kiếm này') lưu tìm kiếm
+	.container
 		.row.search-options 
 			.col-lg-3
 				.search
@@ -253,7 +255,7 @@ section.craigslist_2
 				.project
 					.list-items
 						//- thêm class mflex hoặc không
-						.row.no-gutters
+						.row
 							.col
 								.category.d-none.d-lg-block
 									.category-nav
@@ -268,21 +270,33 @@ section.craigslist_2
 													img.img-fluid(src="./img/Project/project_icon_1.png", alt="")
 												li.nav-item.active.list-2
 													img.img-fluid(src="./img/Project/project_icon_2.png", alt="")
-											.showmap
-												em.lnr.lnr-chevron-left
-						.row.project-list.no-gutters
-							.project-style.d-lg-none
+											//- .showmap
+											//- 	em.lnr.lnr-chevron-left
+						.row.pagination
+							.pagination-style
+								.buttons
+									a.prev(href='#')
+										i.mdi.mdi-arrow-left
+									span.button.pagenum
+										span.rangeFrom 1 - 200
+										span \
+										span.totalcount 3000
+									a.next(href='#')
+										i.mdi.mdi-arrow-right
+						.row.location
+							.location-style
 								ul.nav
 									li.nav-item
 										a.nav-link.mmap(href="javascript:void(0)")
 											img(src="./img/project/project_map.png", alt="")
 											span.ml-2 Bản đồ
-							- for(i=0; i<30; i ++)
+						.row.project-list
+							- for(i=0; i<20; i ++)
 								.col-mod.col-12.box
 									a(href="#").item
 										figure
-											.img(bg-img='./img/project/house-6.jpg')
-												img.d-none-d-xl-block(src="./img/project/house-6.jpg", alt="")
+											.img
+												img(src="./img/project/house-6.jpg", alt="")
 												.detail Xem chi tiết
 											figcaption
 												h5.project-name 50.000$
@@ -334,10 +348,17 @@ section.craigslist_2
 													.item
 														p Đang bán
 														b.price Từ 1.5 tỷ VNĐ / căn
-					.map
-						iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.64296934296!2d106.704975!3d10.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4123a38e10c2885!2zUFZPSUwgVOG7lE5HIEPDlE5HIFRZIEThuqZVIFZJ4buGVCBOQU0!5e0!3m2!1svi!2sus!4v1536653990846" width="100%" height="700" frameborder="0" style="border:0;")
-						.hidemap
-							em.lnr.lnr-chevron-right
+						.row.pagination
+							.pagination-style
+								.buttons
+									a.prev(href='#')
+										i.mdi.mdi-arrow-left
+									span.button.pagenum
+										span.rangeFrom 1 - 200
+										span \
+										span.totalcount 3000
+									a.next(href='#')
+										i.mdi.mdi-arrow-right
 			.map-mobile
 				.map-title
 					p.mb-0 Bản đồ
