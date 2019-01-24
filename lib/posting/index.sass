@@ -1,0 +1,195 @@
+@import ../../_includes
+.posting
+	margin-bottom: 3rem
+	.page-content
+		margin: 1rem 0
+		.content
+			margin: 0 auto
+			.recommend
+				color: #2ecc71
+			.title
+				margin: 1rem 0
+				font-size: 1.3rem
+				font-weight: bold
+				a
+					color: #0073A6
+			.custom-radio
+				margin: 1rem 0
+				.radio
+					position: absolute
+					opacity: 0
+					+ .radio-label:before
+						content: ""
+						background: #fcfcfc
+						border-radius: 100%
+						border: 1px solid #ddd
+						display: inline-block
+						width: 1.4rem
+						height: 1.4rem
+						position: relative
+						top: -0.2em
+						margin-right: 1em
+						vertical-align: top
+						cursor: pointer
+						text-align: center
+						transition: all 250ms ease
+					&:checked + .radio-label:before
+						background-color: #0073A6
+						box-shadow: inset 0 0 0 4px #f4f4f4
+					&:focus + .radio-label:before
+						outline: none
+						border-color: #0073A6
+					&:disabled + .radio-label:before
+						box-shadow: inset 0 0 0 4px #f4f4f4
+						border-color: #b4b4b4
+						background: #b4b4b4
+					+ .radio-label:empty:before
+						margin-right: 0
+			.optional
+				label
+					font-weight: normal !important
+					color: #aaa !important
+				input,
+				select
+					border-color: #aaa !important
+			.posted
+				label
+					color: #2ecc71
+					display: block
+					font-weight: bold
+					margin-bottom: .5rem
+				input,
+				textarea,
+				select
+					border: 1px solid #2ecc71
+					padding: .5rem 1rem
+					border-radius: 4px
+					width: 100%
+					outline: none
+					transition: all .2s ease-in-out
+					&:focus
+						box-shadow: 0 0 10px #ccc
+				.title
+					font-size: 1rem
+					font-weight: normal
+					margin: 0
+				.title,
+				.price,
+				.address,
+				.zipcode,
+				.postcontent,
+				.prod,
+				.code,
+				.size,
+				.language,
+				.status,
+				.email,
+				.phone,
+				.name,
+				.accept
+					margin-bottom: 1rem
+				.postdetail,
+				.postcontact,
+				.contactmore,
+				.location
+					width: 100%
+					padding: 1.5rem
+					border: 1px solid #ccc
+					border-radius: 2px
+					position: relative
+					background: #f9f9f9
+					margin-bottom: 1rem
+					.title
+						margin: 0
+						width: auto
+						font-size: .8rem
+						padding: 0 .5rem
+						font-weight: bold
+					.custom-checkbox
+						margin-bottom: 1rem
+						label
+							color: #aaa
+							font-weight: normal
+					.email
+						input
+							margin-bottom: 1rem
+				.location
+					#map
+						height: 300px
+						+media-breakpoint-up(sm)
+							height: 350px
+						+media-breakpoint-up(md)
+							height: 400px
+						+media-breakpoint-up(lg)
+							height: 450px
+					#description
+						font-family: Roboto
+						font-size: 15px
+						font-weight: 300
+					#infowindow-content
+						display: none
+						.title
+							font-weight: bold
+					#map #infowindow-content
+						display: inline
+					.pac-card
+						margin: 10px 10px 0 0
+						border-radius: 2px 0 0 2px
+						box-sizing: border-box
+						-moz-box-sizing: border-box
+						outline: none
+						box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
+						background-color: #fff
+						font-family: Roboto
+					#pac-container
+						padding-bottom: 12px
+						margin-right: 12px
+					.pac-controls
+						display: inline-block
+						padding: 5px 11px
+						label
+							font-family: Roboto
+							font-size: 13px
+							font-weight: 300
+					#pac-input
+						background-color: #fff
+						font-family: Roboto
+						font-size: 15px
+						font-weight: 300
+						margin: 0 auto
+						padding: .5rem 1rem
+						text-overflow: ellipsis
+						width: 60%
+						position: absolute
+						top: 10px !important
+						left: 50% !important
+						transform: translateX(-50%)
+						&:focus
+							border-color: #4d90fe
+					#title
+						color: #fff
+						background-color: #4d90fe
+						font-size: 25px
+						font-weight: 500
+						padding: 6px 12px
+					#target
+						width: 345px
+			.enter
+				text-align: right
+				width: 100%
+				button
+					border: none
+					margin: 0
+					padding: 0
+					background: #0073A6
+					color: #fff
+					border-radius: 4px
+					text-transform: uppercase
+					font-weight: bold
+					padding: 1rem 3rem
+					background: #2ecc71
+			.type,
+			.catalog,
+			.posted,
+			.enter
+				margin-bottom: 2rem

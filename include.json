@@ -72,6 +72,11 @@
 			"body": [
 				"register"
 			]
+		},
+		"posting": {
+			"body": [
+				"posting"
+			]
 		}
 	}
 }

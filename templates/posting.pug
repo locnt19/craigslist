@@ -1,0 +1,15 @@
+extends _layout/layout.pug
+block variables
+	- var title = "posting"
+	- var description = "Description for posting page"
+	- var bodyclass = "posting"
+	- var href = "/posting.html"
+block header
+	include ../lib/header/index.pug
+block body
+	include ../lib/posting/index.pug
+block footer
+	include ../lib/footer/index.pug
+block js
+	script(async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBTIGCWQJAj3cSPcUyJrH6nF3P5Y1lYzI&libraries=places&callback=initAutocomplete")
+	

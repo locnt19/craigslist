@@ -1,0 +1,159 @@
+section.posting
+	nav.breadcrumb
+		.container
+			a.item(href='index.html') Trang chủ
+			a.item(href='posting.html') Đăng bài viết
+	.page-content
+		.container
+			.row
+				.col-lg-9.content
+					.type
+						.title Tin này thuộc loại nào: (Tham khảo 
+							a(href="prohibited.html") danh sách bị cấm
+							|  trước khi đăng bài)
+						.custom-radio
+							input.radio#1(name="radio" type="radio")
+							label.radio-label(for="1") Việc làm
+						.custom-radio
+							input.radio#2(name="radio" type="radio")
+							label.radio-label(for="2") Cung cấp nhà ở
+						.custom-radio
+							input.radio#3(name="radio" type="radio")
+							label.radio-label(for="3") Nhà đất
+						.custom-radio
+							input.radio#4(name="radio" type="radio")
+							label.radio-label(for="4") Cung cấp dịch vụ
+						.custom-radio
+							input.radio#5(name="radio" type="radio")
+							label.radio-label(for="5") Cộng đồng
+						.custom-radio
+							input.radio#6(name="radio" type="radio")
+							label.radio-label(for="6") Sự kiện
+					.catalog
+						.title Giao dịch tại địa phương và gặp trực tiếp. Chú ý đến vận chuyển, chuyển tiền, chi phiếu đảm bảo. 
+							a(href="prohibited.html") Tìm hiểu thêm
+						.custom-radio
+							input.radio#7(name="radio" type="radio")
+							label.radio-label(for="7") Ảnh / Video - Chính chủ
+						.custom-radio
+							input.radio#8(name="radio" type="radio")
+							label.radio-label(for="8") Bánh xe / Lốp xe - Chính chủ
+						.custom-radio
+							input.radio#9(name="radio" type="radio")
+							label.radio-label(for="9") Dụng cụ - Chính chủ
+						.custom-radio
+							input.radio#10(name="radio" type="radio")
+							label.radio-label(for="10") Đồ cổ - Chính chủ
+						.custom-radio
+							input.radio#11(name="radio" type="radio")
+							label.radio-label(for="11") Đồ gia dụng - Chính chủ
+						.custom-radio
+							input.radio#12(name="radio" type="radio")
+							label.radio-label(for="12") Xe máy / Ô tô - Chính chủ
+					.posted
+						.row
+							.col-lg-4
+								.title
+									label(for="in-title") Tiêu đề bài đăng
+									input#in-title(type="text")
+							.col-lg-2
+								.price.optional
+									label(for="in-price") Giá bán
+									input#in-price(type="text")
+							.col-lg-4
+								.address.optional
+									label(for="in-address") Địa chỉ cụ thể
+									input#in-address(type="text")
+							.col-lg-2
+								.zipcode
+									label(for="in-zipcode") Mã bưu điện
+									input#in-zipcode(type="text")
+							.col-lg-12
+								.postcontent
+									label(for="in-postcontent") Nội dung bài đăng
+									textarea#in-postcontent(rows="10")
+							.col-lg-12
+								fieldset.postdetail
+									legend.title Chi tiết bài đăng
+									.row
+										.col-lg-4
+											.prod
+												label(for="in-prod") Nhà sản xuất
+												input#in-prod(type="text")
+											.code
+												label(for="in-code") Mã sản phẩm
+												input#in-code(type="text")
+											.size.optional
+												label(for="in-size") Kích thước
+												input#in-size(type="text")
+										.col-lg-4
+											.language.optional
+												label Ngôn ngữ bài viết
+												select
+													option --
+													option Tiếng Việt
+													option Tiếng Anh
+													option Tiếng Trung
+													option Tiếng Nhật
+													option Tiếng Hàn
+											.status
+												label Tình trạng
+												select
+													option --
+													option Like new
+													option New 99%
+													option New 98%
+													option New 95%
+										.col-lg-4
+											.custom-checkbox
+												input.checkbox#13(type="checkbox")
+												label(for="13") Chấp nhận thanh toán online
+											.custom-checkbox
+												input.checkbox#14(type="checkbox")
+												label(for="14") Cung cấp thêm nhiều sản phẩm liên quan
+							.col-lg-12
+								fieldset.postcontact
+									legend.title Thông tin liên hệ
+									.row
+										.col-lg-5
+											.email
+												label(for="in-email") Email
+												input#in-email(type="text" placeholder="Địa chỉ email của bạn")
+												input(type="text" placeholder="Nhập lại địa chỉ email")
+											.optionemail
+												.custom-radio.optional
+													input.radio#15(name="optionemail" type="radio" title="CL sẽ ẩn địa chỉ email của bạn và thay thế bằng email của CL")
+													label.radio-label(for="15") Chuyển tiếp thư cho CL 
+														span.recommend (Được đề nghị)
+												.custom-radio.optional
+													input.radio#15(name="optionemail" type="radio" title="Không có địa chỉ email nào xuất hiện trong tin của bạn. Hãy chắc chắn bạn có điền thông tin liên hệ khác !")
+													label.radio-label(for="15") Không trả lời email này
+										.col-lg-7
+											fieldset.contactmore
+												legend.title Thông tin liên hệ khác
+												.row
+												.col-lg-12
+													.inline
+														.custom-checkbox
+															input.checkbox#16(type="checkbox")
+															label(for="16") Bằng điện thoại
+														.custom-checkbox
+															input.checkbox#17(type="checkbox")
+															label(for="17") Bằng văn bản
+													.phone.optional
+														label(for="in-phone") Số điện thoại
+														input#in-phone(type="text")
+													.name.optional
+														label(for="in-name") Tên liên hệ
+														input#in-name(type="text")
+							.col-lg-12
+								fieldset.location
+									legend.title Vị trí
+									input#pac-input.controls(type="text" placeholder="Search Box")
+									#map
+							.col-lg-12
+								.custom-checkbox.optional.accept
+									input.checkbox#18(type="checkbox")
+									label(for="18") Đồng ý để người khác liên lạc với bạn về các dịch vụ, sản phẩm hoặc những mối quan tâm thương mại khác
+					.enter
+						button(type="submit") Đăng bài
