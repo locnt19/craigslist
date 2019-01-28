@@ -3,6 +3,10 @@ section.homepage
 		.row
 			.col-lg-3
 				.leftbar
+					.burger
+						span
+						span
+						span
 					#logo
 						a(href="") craigslist
 					ul.postlks
@@ -10,8 +14,8 @@ section.homepage
 							a(href="posting.html") tạo bài viết mới
 						li
 							a(href="login.html") tài khoản của tôi
-					form#search.homepage-search(action="#" method="GET")
-						input#query.querybox.flatinput(name="query" data-autocomplete="search-count" autocorrect="off" autocapitalize="off" placeholder="tìm kiếm craigslist" autofocus="autofocus")
+					form.homepage-search(action="#" method="GET")
+						input.querybox(name="query" data-autocomplete="search-count" autocorrect="off" autocapitalize="off" placeholder="tìm kiếm craigslist" autofocus="autofocus")
 						button#go.searchbtn(type="submit")
 							span.icon.icon-search
 								span.screen-reader-text
